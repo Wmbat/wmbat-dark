@@ -1,5 +1,22 @@
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
+vim.g.terminal_color_0 = '#2B2D3A'
+vim.g.terminal_color_1 = '#ec7279'
+vim.g.terminal_color_2 = '#a0c980'
+vim.g.terminal_color_3 = '#deb974'
+vim.g.terminal_color_4 = '#6cb6eb'
+vim.g.terminal_color_5 = '#d38aea'
+vim.g.terminal_color_6 = '#5dbbc1'
+vim.g.terminal_color_7 = '#c5cdd9'
+vim.g.terminal_color_8 = '#2B2D3A'
+vim.g.terminal_color_9 = '#ec7279'
+vim.g.terminal_color_10 = '#a0c980'
+vim.g.terminal_color_11 = '#deb974'
+vim.g.terminal_color_12 = '#6cb6eb'
+vim.g.terminal_color_13 = '#d38aea'
+vim.g.terminal_color_14 = '#5dbbc1'
+vim.g.terminal_color_15 = '#c5cdd9'
+
 Color.new('foreground', '#c5cdd9')
 Color.new('background', '#2B2D3A')
 Color.new('background_red', '#ec7279')
