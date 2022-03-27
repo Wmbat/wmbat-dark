@@ -77,14 +77,22 @@ Group.new('VirtualTextHint', colors.green, nil, styles.NONE)
 
 Group.new('CurrentWord', nil, nil, styles.bold)
 
-Group.new('Normal', colors.foreground, colors.background, styles.NONE)
-Group.new('Terminal', colors.foreground, colors.background, styles.NONE)
-Group.new('EndOfBuffer', colors.background, colors.background, styles.NONE)
-Group.new('Folded', colors.grey, colors.background, styles.NONE)
-Group.new('FoldedColumn', colors.grey_dim, colors.background, styles.NONE)
-Group.new('SignColumn', colors.foreground, colors.background, styles.NONE)
+Group.new('Normal', colors.foreground, nil, styles.NONE)
+Group.new('Terminal', colors.foreground, nil, styles.NONE)
+Group.new('EndOfBuffer', colors.background, nil, styles.NONE)
+Group.new('Folded', colors.grey, nil, styles.NONE)
+Group.new('ToolbarLine', colors.foreground, colors.background, styles.NONE)
+Group.new('SignColumn', colors.foreground, nil, styles.NONE)
+Group.new('FoldedColumn', colors.grey_dim, nil, styles.NONE)
 Group.new('IncSearch', colors.background, colors.background_blue, styles.NONE)
 Group.new('Search', colors.background, colors.background_green, styles.NONE)
+Group.new('ColorColumn', nil, colors.background, styles.NONE)
+Group.new('Conceal', colors.grey_dim, nil, styles.NONE)
+Group.new('Cursor', nil, nil, styles.reverse)
+Group.new('vCursor', nil, nil, styles.reverse)
+Group.new('iCursor', nil, nil, styles.reverse)
+Group.new('lCursor', nil, nil, styles.reverse)
+Group.new('CursorIM', nil, nil, styles.reverse)
 
 Group.new('Type', colors.red, nil, styles.NONE)
 Group.new('Structure', colors.red, nil, styles.NONE)
@@ -118,3 +126,18 @@ Group.new('Delimiter', colors.foreground, nil, styles.NONE)
 Group.new('Comment', colors.grey, nil, styles.italic)
 Group.new('SpecialComment', colors.grey, nil, styles.italic)
 Group.new('Todo', colors.red, nil, styles.italic)
+
+-- RRethy/vim-illuminate
+Group.new('illuminatedWork', nil, nil, styles.bold)
+
+-- nvim-telescope/telescope.nvim
+
+-- lewis6991/gitsigns.nvim
+
+-- p00f/nvim-ts-rainbow
+
+-- rcarriga/nvim-dap-ui
+
+-- kyazdani42/nvim-tree.lua
+
+-- mhinz/vim-startify
