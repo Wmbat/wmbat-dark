@@ -139,67 +139,67 @@ Group.new('VirtualTextHint', colors.green, nil, styles.NONE)
 
 Group.new('CurrentWord', nil, nil, styles.bold)
 
--- Group.new('Substitute', colors.background, colors.yellow, styles.NONE)
+Group.new('Substitute', colors.background, colors.yellow, styles.NONE)
 
--- Group.new('DiagnosticError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
--- Group.new('DiagnosticWarn', groups.WarningText, groups.WarningText, groups.WarningText)
--- Group.new('DiagnosticInfo', groups.InfoText, groups.InfoText, groups.InfoText)
--- Group.new('DiagnosticHint', groups.HintText, groups.HintText, groups.HintText)
--- 
--- Group.new('DiagnosticFloatingError', groups.ErrorFloat, groups.ErrorFloat, groups.ErrorFloat)
--- Group.new('DiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, groups.WarningFloat)
--- Group.new('DiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
--- Group.new('DiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
--- 
--- Group.new('DiagnosticVirtualTextError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
--- Group.new('DiagnosticVirtualTextWarn', groups.WarningText, groups.WarningText, groups.WarningText)
--- Group.new('DiagnosticVirtualTextInfo', groups.InfoText, groups.InfoText, groups.InfoText)
--- Group.new('DiagnosticVirtualTextHint', groups.HintText, groups.HintText, groups.HintText)
--- 
--- Group.new('DiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
--- Group.new('DiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
--- Group.new('DiagnosticUnderlineInfo', groups.InfoText, groups.InfoText, groups.InfoText)
--- Group.new('DiagnosticUnderlineHint', groups.HintText, groups.HintText, groups.HintText)
--- 
--- Group.new('DiagnosticSignError', groups.RedSign, groups.RedSign, groups.RedSign)
--- Group.new('DiagnosticSignWarn', groups.YellowSign, groups.YellowSign, groups.YellowSign)
--- Group.new('DiagnosticSignInfo', groups.BlueSign, groups.BlueSign, groups.BlueSign)
--- Group.new('DiagnosticSignHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
--- 
--- Group.new('LspDiagnosticDefaultError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
--- Group.new('LspDiagnosticDefaultWarn', groups.WarningText, groups.WarningText, groups.WarningText)
--- Group.new('LspDiagnosticDefaultInfo', groups.InfoText, groups.InfoText, groups.InfoText)
--- Group.new('LspDiagnosticDefaultHint', groups.HintText, groups.HintText, groups.HintText)
--- 
--- Group.new('LspDiagnosticFloatingError', groups.ErrorFloat, groups.ErrorFloat, groups.ErrorFloat)
--- Group.new('LspDiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, groups.WarningFloat)
--- Group.new('LspDiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
--- Group.new('LspDiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
--- 
--- Group.new('LspDiagnosticVirtualTextError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
--- Group.new('LspDiagnosticVirtualTextWarn', groups.WarningText, groups.WarningText, groups.WarningText)
--- Group.new('LspDiagnosticVirtualTextInfo', groups.InfoText, groups.InfoText, groups.InfoText)
--- Group.new('LspDiagnosticVirtualTextHint', groups.HintText, groups.HintText, groups.HintText)
--- 
--- Group.new('LspDiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
--- Group.new('LspDiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
--- Group.new('LspDiagnosticUnderlineInfo', groups.InfoText, groups.InfoText, groups.InfoText)
--- Group.new('LspDiagnosticUnderlineHint', groups.HintText, groups.HintText, groups.HintText)
--- 
--- Group.new('LspDiagnosticSignError', groups.RedSign, groups.RedSign, groups.RedSign)
--- Group.new('LspDiagnosticSignWarn', groups.YellowSign, groups.YellowSign, groups.YellowSign)
--- Group.new('LspDiagnosticSignInfo', groups.BlueSign, groups.BlueSign, groups.BlueSign)
--- Group.new('LspDiagnosticSignHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
--- 
--- Group.new('LspReferenceText', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
--- Group.new('LspReferenceRead', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
--- Group.new('LspReferenceWrite', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
--- 
--- Group.new('TermCursor', groups.Cursor, groups.Cursor, groups.Cursor)
--- 
--- Group.new('healthError', groups.red, groups.red, groups.red)
--- Group.new('healthWarning', groups.yellow, groups.yellow, groups.yellow)
--- Group.new('healthSuccess', groups.green, groups.green, groups.green)
+Group.new('DiagnosticError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
+Group.new('DiagnosticWarn', groups.WarningText, groups.WarningText, groups.WarningText)
+Group.new('DiagnosticInfo', groups.InfoText, groups.InfoText, groups.InfoText)
+Group.new('DiagnosticHint', groups.HintText, groups.HintText, groups.HintText)
+
+Group.new('DiagnosticFloatingError', groups.ErrorFloat, groups.ErrorFloat, groups.ErrorFloat)
+Group.new('DiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, groups.WarningFloat)
+Group.new('DiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
+Group.new('DiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
+
+Group.new('DiagnosticVirtualTextError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
+Group.new('DiagnosticVirtualTextWarn', groups.WarningText, groups.WarningText, groups.WarningText)
+Group.new('DiagnosticVirtualTextInfo', groups.InfoText, groups.InfoText, groups.InfoText)
+Group.new('DiagnosticVirtualTextHint', groups.HintText, groups.HintText, groups.HintText)
+
+Group.new('DiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
+Group.new('DiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
+Group.new('DiagnosticUnderlineInfo', groups.InfoText, groups.InfoText, groups.InfoText)
+Group.new('DiagnosticUnderlineHint', groups.HintText, groups.HintText, groups.HintText)
+
+Group.new('DiagnosticSignError', groups.RedSign, groups.RedSign, groups.RedSign)
+Group.new('DiagnosticSignWarn', groups.YellowSign, groups.YellowSign, groups.YellowSign)
+Group.new('DiagnosticSignInfo', groups.BlueSign, groups.BlueSign, groups.BlueSign)
+Group.new('DiagnosticSignHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
+
+Group.new('LspDiagnosticDefaultError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
+Group.new('LspDiagnosticDefaultWarn', groups.WarningText, groups.WarningText, groups.WarningText)
+Group.new('LspDiagnosticDefaultInfo', groups.InfoText, groups.InfoText, groups.InfoText)
+Group.new('LspDiagnosticDefaultHint', groups.HintText, groups.HintText, groups.HintText)
+
+Group.new('LspDiagnosticFloatingError', groups.ErrorFloat, groups.ErrorFloat, groups.ErrorFloat)
+Group.new('LspDiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, groups.WarningFloat)
+Group.new('LspDiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
+Group.new('LspDiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
+
+Group.new('LspDiagnosticVirtualTextError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
+Group.new('LspDiagnosticVirtualTextWarn', groups.WarningText, groups.WarningText, groups.WarningText)
+Group.new('LspDiagnosticVirtualTextInfo', groups.InfoText, groups.InfoText, groups.InfoText)
+Group.new('LspDiagnosticVirtualTextHint', groups.HintText, groups.HintText, groups.HintText)
+
+Group.new('LspDiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
+Group.new('LspDiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
+Group.new('LspDiagnosticUnderlineInfo', groups.InfoText, groups.InfoText, groups.InfoText)
+Group.new('LspDiagnosticUnderlineHint', groups.HintText, groups.HintText, groups.HintText)
+
+Group.new('LspDiagnosticSignError', groups.RedSign, groups.RedSign, groups.RedSign)
+Group.new('LspDiagnosticSignWarn', groups.YellowSign, groups.YellowSign, groups.YellowSign)
+Group.new('LspDiagnosticSignInfo', groups.BlueSign, groups.BlueSign, groups.BlueSign)
+Group.new('LspDiagnosticSignHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
+
+Group.new('LspReferenceText', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+Group.new('LspReferenceRead', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+Group.new('LspReferenceWrite', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+
+Group.new('TermCursor', groups.Cursor, groups.Cursor, groups.Cursor)
+
+Group.new('healthError', groups.red, groups.red, groups.red)
+Group.new('healthWarning', groups.yellow, groups.yellow, groups.yellow)
+Group.new('healthSuccess', groups.green, groups.green, groups.green)
 
 -- RRethy/vim-illuminate
 -- Group.new('illuminatedWork', nil, nil, styles.bold)
