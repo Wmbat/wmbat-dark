@@ -202,7 +202,7 @@ Group.new('healthWarning', groups.yellow, groups.yellow, groups.yellow)
 Group.new('healthSuccess', groups.green, groups.green, groups.green)
 
 -- RRethy/vim-illuminate
--- Group.new('illuminatedWork', nil, nil, styles.bold)
+Group.new('illuminatedWork', nil, nil, styles.bold)
 
 -- nvim-telescope/telescope.nvim
 
