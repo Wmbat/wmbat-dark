@@ -98,10 +98,9 @@ Group.new('VertSplit', colors.purple, nil, styles.NONE)
 -- Group.new('VisualNOS', nil, colors.background, styles.underline)
 -- Group.new('QuickFixLine', colors.purple, s:palette.none, styles.bold)
 Group.new('Debug', colors.yellow, nil, styles.NONE)
-Group.new('debugPC', colors.background, colors.background_green, styles.NONE)
-Group.new('debugBreakpoint', colors.background, s:palette.background_red, styles.NONE)
-Group.new('ToolbarButton', colors.background, colors.background_purple, styles.NONE)
-
+-- Group.new('debugPC', colors.background, colors.background_green, styles.NONE)
+-- Group.new('debugBreakpoint', colors.background, s:palette.background_red, styles.NONE)
+-- Group.new('ToolbarButton', colors.background, colors.background_purple, styles.NONE)
 
 Group.new('Type', colors.red, nil, styles.NONE)
 Group.new('Structure', colors.red, nil, styles.NONE)
