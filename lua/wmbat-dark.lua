@@ -17,12 +17,15 @@ vim.g.terminal_color_13 = '#d38aea'
 vim.g.terminal_color_14 = '#5dbbc1'
 vim.g.terminal_color_15 = '#c5cdd9'
 
+-- Basic Colours
+--
 Color.new('foreground', '#c5cdd9')
 Color.new('background', '#2B2D3A')
 Color.new('background_red', '#ec7279')
 Color.new('background_green', '#a0c980')
 Color.new('background_blue', '#6cb6eb')
 Color.new('background_purple', '#d38aea')
+Color.new('background_grey', '#7a819d')
 
 Color.new('diff_red', '#55393d')
 Color.new('diff_green', '#394634')
@@ -70,6 +73,8 @@ Group.new('CursorIM', nil, nil, styles.reverse)
 Group.new('LineNr', colors.grey_dim, nil, styles.NONE)
 -- Group.net('CursorLineNr', colors.grey, nil, styles.NONE)
 
+-- UI
+--
 Group.new('DiffAdd', nil, colors.diff_green, styles.NONE)
 Group.new('DiffChange', nil, colors.diff_blue, styles.NONE)
 Group.new('DiffDelete', nil, colors.diff_red, styles.NONE)
@@ -85,6 +90,16 @@ Group.new('Whitespace', colors.background, nil, styles.NONE)
 Group.new('SpecialKey', colors.background, nil, styles.NONE)
 Group.new('Pmenu', colors.foreground, colors.background, styles.NONE)
 Group.new('PmenuSbar', nil, colors.background, styles.NONE)
+
+Group.new('PmenuSel', colors.background, colors.background_blue, styles.NONE)
+Group.new('WildMenu', groups.PmenuSel, groups.PmenuSel, groups.PmenuSel)
+Group.new('PmenuThumb', nil, colors.background_grey, styles.NONE)
+Group.new('NormalFloat', colors.foreground, colors.background)
+Group.new('Question', colors.yellow, nil, styles.NONE)
+Group.new('SpellBad', colors.red, nil, styles.undercurl)
+Group.new('SpellCap', colors.yellow, nil, styles.undercurl)
+Group.new('SpellLocal', colors.blue, nil, styles.undercurl)
+Group.new('SpellRare', colors.purple, nil, styles.undercurl)
 
 Group.new('StatusLine', colors.foreground, colors.background, styles.NONE)
 Group.new('StatusLineTerm', colors.foreground, colors.background, styles.NONE)
@@ -102,6 +117,8 @@ Group.new('debugPC', colors.background, colors.background_green, styles.NONE)
 Group.new('debugBreakpoint', colors.background, colors.background_red, styles.NONE)
 Group.new('ToolbarButton', colors.background, colors.background_purple, styles.NONE)
 
+-- Syntax
+--
 Group.new('Type', colors.red, nil, styles.NONE)
 Group.new('Structure', colors.red, nil, styles.NONE)
 Group.new('StorageClass', colors.red, nil, styles.NONE)
@@ -135,6 +152,8 @@ Group.new('Comment', colors.grey, nil, styles.italic)
 Group.new('SpecialComment', colors.grey, nil, styles.italic)
 Group.new('Todo', colors.red, nil, styles.italic)
 
+-- Predifined Highlight Groups
+--
 Group.new('RedItalic', colors.red, nil, styles.NONE)
 Group.new('YellowItalic', colors.yellow, nil, styles.NONE)
 Group.new('GreenItalic', colors.green, nil, styles.NONE)
