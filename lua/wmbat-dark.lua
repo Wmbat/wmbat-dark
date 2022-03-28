@@ -351,3 +351,12 @@ Group.new('NvimTreeLspDiagnosticsInformation', groups.BlueSign, groups.BlueSign,
 Group.new('NvimTreeLspDiagnosticsHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
 
 -- mhinz/vim-startify
+--
+Group.new('StartifyBracket', groups.Grey, groups.Grey, groups.Grey)
+Group.new('StartifyFile', groups.Fg, groups.Fg, groups.Fg)
+Group.new('StartifyNumber', groups.Red, groups.Red, groups.Red)
+Group.new('StartifyPath', groups.Green, groups.Green, groups.Green)
+Group.new('StartifySlash', groups.Green, groups.Green, groups.Green)
+Group.new('StartifySection', groups.Blue, groups.Blue, groups.Blue)
+Group.new('StartifyHeader', groups.Purple, groups.Purple, groups.Purple)
+Group.new('StartifySpecial', groups.Grey, groups.Grey, groups.Grey)
