@@ -73,9 +73,9 @@ Group.new('lCursor', nil, nil, styles.reverse)
 Group.new('CursorIM', nil, nil, styles.reverse)
 
 Group.new('CursorLine', nil, nil, styles.NONE) 
--- Group.new('CursorColumn', nil, nil, styles.NONE) 
+Group.new('CursorColumn', nil, nil, styles.NONE) 
 Group.new('LineNr', colors.grey_dim, nil, styles.NONE)
-Group.net('CursorLineNr', colors.grey, nil, styles.NONE)
+Group.new('CursorLineNr', colors.grey, nil, styles.NONE)
 
 -- UI
 --
