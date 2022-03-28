@@ -5,7 +5,7 @@ vim.g.colors_name='wmbat-dark'
 -- Basic Colours
 --
 Color.new('fg',                 '#c5cdd9')
-Color.new('bg',                 '#2B2D3A')
+Color.new('bg',                 '#2b2d3a')
 Color.new('bg_1',               '#333648')
 Color.new('bg_2',               '#363a4e')
 Color.new('bg_3',               '#393e53')
