@@ -291,7 +291,7 @@ Group.new('TSMath', groups.Green, groups.Green, groups.Green)
 Group.new('TSType', groups.Yellow, groups.Yellow, groups.Yellow)
 Group.new('TSTypeBuiltin', groups.Yellow, groups.Yellow, groups.Yellow)
 Group.new('TSURI', colors.green, colors.none, styles.underline)
-Group.new('TSVariable', groups.Fg, groups.Fg, groups.Fg)
+Group.new('TSVariable', groups.Red, groups.Red, groups.Red)
 Group.new('TSVariableBuiltin', groups.CyanItalic, groups.CyanItalic, groups.CyanItalic)
 
 -- RRethy/vim-illuminate
