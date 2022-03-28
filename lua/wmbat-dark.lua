@@ -206,10 +206,10 @@ Group.new('DiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, gr
 Group.new('DiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
 Group.new('DiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
 
-Group.new('DiagnosticVirtualTextError', groups.VirtualErrorText, groups.VirtualErrorText, groups.VirtualErrorText)
-Group.new('DiagnosticVirtualTextWarn', groups.VirtualWarningText, groups.VirtualWarningText, groups.VirtualWarningText)
-Group.new('DiagnosticVirtualTextInfo', groups.VirtualInfoText, groups.VirtualInfoText, groups.VirtualInfoText)
-Group.new('DiagnosticVirtualTextHint', groups.VirtualHintText, groups.VirtualHintText, groups.VirtualHintText)
+Group.new('DiagnosticVirtualTextError', groups.VirtualTextError, groups.VirtualTextError, groups.VirtualTextError)
+Group.new('DiagnosticVirtualTextWarn', groups.VirtualTextWarning, groups.VirtualTextWarning, groups.VirtualTextWarning)
+Group.new('DiagnosticVirtualTextInfo', groups.VirtualTextInfo, groups.VirtualTextInfo, groups.VirtualTextInfo)
+Group.new('DiagnosticVirtualTextHint', groups.VirtualTextHint, groups.VirtualTextHint, groups.VirtualTextHint)
 
 Group.new('DiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
 Group.new('DiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
@@ -231,10 +231,10 @@ Group.new('LspDiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat,
 Group.new('LspDiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
 Group.new('LspDiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
 
-Group.new('LspDiagnosticVirtualTextError', groups.VirtualErrorText, groups.VirtualErrorText, groups.VirtualErrorText)
-Group.new('LspDiagnosticVirtualTextWarn', groups.VirtualWarningText, groups.VirtualWarningText, groups.VirtualWarningText)
-Group.new('LspDiagnosticVirtualTextInfo', groups.VirtualInfoText, groups.VirtualInfoText, groups.VirtualInfoText)
-Group.new('LspDiagnosticVirtualTextHint', groups.VirtualHintText, groups.VirtualHintText, groups.VirtualHintText)
+Group.new('LspDiagnosticVirtualTextError', groups.VirtualTextError, groups.VirtualTextError, groups.VirtualTextError)
+Group.new('LspDiagnosticVirtualTextWarn', groups.VirtualTextWarning, groups.VirtualTextWarning, groups.VirtualTextWarning)
+Group.new('LspDiagnosticVirtualTextInfo', groups.VirtualTextInfo, groups.VirtualTextInfo, groups.VirtualTextInfo)
+Group.new('LspDiagnosticVirtualTextHint', groups.VirtualTextHint, groups.VirtualTextHint, groups.VirtualTextHint)
 
 Group.new('LspDiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
 Group.new('LspDiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
