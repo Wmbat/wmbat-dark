@@ -227,9 +227,9 @@ Group.new('LspDiagnosticSignWarn', groups.YellowSign, groups.YellowSign, groups.
 Group.new('LspDiagnosticSignInfo', groups.BlueSign, groups.BlueSign, groups.BlueSign)
 Group.new('LspDiagnosticSignHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
 
-Group.new('LspReferenceText', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
-Group.new('LspReferenceRead', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
-Group.new('LspReferenceWrite',  groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+-- Group.new('LspReferenceText', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+-- Group.new('LspReferenceRead', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+-- Group.new('LspReferenceWrite',  groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
 
 Group.new('TermCursor', groups.Cursor, groups.Cursor, groups.Cursor)
 
