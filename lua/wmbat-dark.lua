@@ -171,7 +171,7 @@ Group.new('VirtualTextWarning', colors.yellow, colors.none, styles.NONE)
 Group.new('VirtualTextInfo', colors.blue, colors.none, styles.NONE)
 Group.new('VirtualTextHint', colors.green, colors.none, styles.NONE)
 
-Group.new('CurrentWord', colors.bg_4, colors.none, styles.bold)
+Group.new('CurrentWord', colors.none, colors.none, styles.bold)
 
 Group.new('Substitute',         colors.bg,          colors.yellow,      styles.NONE)
 
