@@ -324,16 +324,16 @@ Group.new('TelescopePromptPrefix' groups.Blue, groups.Blue, groups.Blue)
 Group.new('TelescopeSelection', groups.DiffAdd, groups.DiffAdd, groups.DiffAdd)
 
 -- lewis6991/gitsigns.nvim-tree
-Group.new('GitSignsAdd', groups.GreenSign, groups.GreenSign, groups.GreenSign)
-Group.new('GitSignsChange', groups.BlueSign, groups.BlueSign, groups.BlueSign)
-Group.new('GitSignsDelete', groups.RedSign, groups.RedSign, groups.RedSign)
-Group.new('GitSignsAddNr', groups.Green, groups.Green, groups.Green)
-Group.new('GitSignsChangeNr', groups.Blue, groups.Blue, groups.Blue)
-Group.new('GitSignsDeleteNr', groups.Red, groups.Red, groups.Red)
-Group.new('GitSignsAddLn', groups.DiffAdd, groups.DiffAdd, groups.DiffAdd)
-Group.new('GitSignsChangeLn', groups.DiffChange, groups.DiffChange, groups.DiffChange)
-Group.new('GitSignsDeleteLn', groups.DiffDelete, groups.DiffDelete, groups.DiffDelete)
-Group.new('GitSignsCurrentLineBlame', groups.Grey, groups.Grey, groups.Grey)
+-- Group.new('GitSignsAdd', groups.GreenSign, groups.GreenSign, groups.GreenSign)
+-- Group.new('GitSignsChange', groups.BlueSign, groups.BlueSign, groups.BlueSign)
+-- Group.new('GitSignsDelete', groups.RedSign, groups.RedSign, groups.RedSign)
+-- Group.new('GitSignsAddNr', groups.Green, groups.Green, groups.Green)
+-- Group.new('GitSignsChangeNr', groups.Blue, groups.Blue, groups.Blue)
+-- Group.new('GitSignsDeleteNr', groups.Red, groups.Red, groups.Red)
+-- Group.new('GitSignsAddLn', groups.DiffAdd, groups.DiffAdd, groups.DiffAdd)
+-- Group.new('GitSignsChangeLn', groups.DiffChange, groups.DiffChange, groups.DiffChange)
+-- Group.new('GitSignsDeleteLn', groups.DiffDelete, groups.DiffDelete, groups.DiffDelete)
+-- Group.new('GitSignsCurrentLineBlame', groups.Grey, groups.Grey, groups.Grey)
 
 -- p00f/nvim-ts-rainbow
 
