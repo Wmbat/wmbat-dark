@@ -171,7 +171,7 @@ Group.new('VirtualTextWarning', colors.yellow, colors.none, styles.NONE)
 Group.new('VirtualTextInfo', colors.blue, colors.none, styles.NONE)
 Group.new('VirtualTextHint', colors.green, colors.none, styles.NONE)
 
-Group.new('CurrentWord', colors.none, colors.none, styles.bold)
+Group.new('CurrentWord', colors.bg_4, colors.none, styles.bold)
 
 Group.new('Substitute',         colors.bg,          colors.yellow,      styles.NONE)
 
@@ -227,9 +227,9 @@ Group.new('LspDiagnosticSignWarn', groups.YellowSign, groups.YellowSign, groups.
 Group.new('LspDiagnosticSignInfo', groups.BlueSign, groups.BlueSign, groups.BlueSign)
 Group.new('LspDiagnosticSignHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
 
--- Group.new('LspReferenceText', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
--- Group.new('LspReferenceRead', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
--- Group.new('LspReferenceWrite',  groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+Group.new('LspReferenceText', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+Group.new('LspReferenceRead', groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
+Group.new('LspReferenceWrite',  groups.CurrentWord, groups.CurrentWord, groups.CurrentWord)
 
 Group.new('TermCursor', groups.Cursor, groups.Cursor, groups.Cursor)
 
@@ -291,7 +291,7 @@ Group.new('TSMath', groups.Green, groups.Green, groups.Green)
 Group.new('TSType', groups.Yellow, groups.Yellow, groups.Yellow)
 Group.new('TSTypeBuiltin', groups.Yellow, groups.Yellow, groups.Yellow)
 Group.new('TSURI', colors.green, colors.none, styles.underline)
-Group.new('TSVariable', groups.RedItalic, groups.RedItalic, groups.RedItalic)
+Group.new('TSVariable', groups.Fg, groups.Fg, groups.Fg)
 Group.new('TSVariableBuiltin', groups.CyanItalic, groups.CyanItalic, groups.CyanItalic)
 
 -- RRethy/vim-illuminate
