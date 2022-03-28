@@ -320,8 +320,8 @@ Group.new('illuminatedWork', nil, nil, styles.bold)
 
 Group.new('TelescopeMatching', colors.green, nil, styles.bold)
 Group.new('TelescopeBorder', groups.Purple, groups.Purple, groups.Purple)
-Group.new('TelescopePromptPrefix' groups.Blue, groups.Blue, group.Blue)
-Group.new('TelescopeSelection', groups.DiffAdd, groups.DiffAdd, groups.DiffAdd)
+-- Group.new('TelescopePromptPrefix' groups.Blue, groups.Blue, group.Blue)
+-- Group.new('TelescopeSelection', groups.DiffAdd, groups.DiffAdd, groups.DiffAdd)
 
 -- lewis6991/gitsigns.nvim
 
