@@ -4,17 +4,17 @@ vim.g.colors_name='wmbat-dark'
 
 -- Basic Colours
 --
-Color.new('fg',         '#c5cdd9')
-Color.new('bg',         '#2B2D3A')
-Color.new('bg_1',       '#333648')
-Color.new('bg_2',       '#363a4e')
-Color.new('bg_3',       '#393e53')
-Color.new('bg_4',       '#3f445b')
-Color.new('bg_red',     '#ec7279')
-Color.new('bg_green',   '#a0c980')
-Color.new('bg_blue',    '#6cb6eb')
-Color.new('bg_purple',  '#d38aea')
-Color.new('bg_grey',    '#7a819d')
+Color.new('fg',                 '#c5cdd9')
+Color.new('bg',                 '#2B2D3A')
+Color.new('bg_1',               '#333648')
+Color.new('bg_2',               '#363a4e')
+Color.new('bg_3',               '#393e53')
+Color.new('bg_4',               '#3f445b')
+Color.new('bg_red',             '#ec7279')
+Color.new('bg_green',           '#a0c980')
+Color.new('bg_blue',            '#6cb6eb')
+Color.new('bg_purple',          '#d38aea')
+Color.new('bg_grey',            '#7a819d')
 
 Color.new('diff_red',           '#55393d')
 Color.new('diff_green',         '#394634')
@@ -75,83 +75,77 @@ Group.new('Pmenu',              colors.fg,          colors.bg_2,        styles.N
 Group.new('PmenuSbar',          colors.none,        colors.bg_2,        styles.NONE)
 Group.new('PmenuSel',           colors.bg,          colors.bg_blue,     styles.NONE)
 Group.new('PmenuThumb',         colors.none,        colors.bg_grey,     styles.NONE)
+Group.new('Question',           colors.yellow,      colors.none,        styles.NONE)
+Group.new('QuickFixLine',       colors.purple,      colors.none,        styles.bold)
+Group.new('Search',             colors.bg,          colors.bg_green,    styles.NONE)
+Group.new('SignColumn',         colors.fg,          colors.none,        styles.NONE)
+Group.new('SpecialKey',         colors.bg_4,        colors.none,        styles.NONE)
+Group.new('SpellBad',           colors.none,        colors.none,        styles.undercurl, colors.red)
+Group.new('SpellCap',           colors.none,        colors.none,        styles.undercurl, colors.yellow)
+Group.new('SpellLocal',         colors.none,        colors.none,        styles.undercurl, colors.blue)
+Group.new('SpellRare',          colors.none,        colors.none,        styles.undercurl, colors.purple)
+Group.new('StatusLine',         colors.fg,          colors.bg_2,        styles.NONE)
+Group.new('StatusLineTerm',     colors.fg,          colors.bg_2,        styles.NONE)
+Group.new('StatusLineNC',       colors.grey,        colors.bg_1,        styles.NONE)
+Group.new('StatusLineTermNC',   colors.grey,        colors.bg_1,        styles.NONE)
+Group.new('TabLine',            colors.fg,          colors.bg_4,        styles.NONE)
+Group.new('TabLineFill',        colors.grey,        colors.bg_1,        styles.NONE)
+Group.new('TabLineSel',         colors.bg,          colors.bg_purple,   styles.NONE)
+Group.new('ToolbarButton',      colors.bg,          colors.bg_purple,   styles.NONE)
+Group.new('ToolbarLine',        colors.fg,          colors.bg_2,        styles.NONE)
+Group.new('Underlined',         colors.none,        colors.none,        styles.underline)
+Group.new('VertSplit',          colors.purple,      colors.none,        styles.NONE)
+Group.new('Visual',             colors.none,        colors.bg_3,        styles.NONE)
+Group.new('VisualNOS',          colors.none,        colors.bg_3,        styles.underline)
+Group.new('WarningMsg',         colors.yellow,      colors.none,        styles.bold)
+Group.new('WildMenu',           groups.PmenuSel,    groups.PmenuSel,    groups.PmenuSel)
 
-Group.new('Terminal', colors.fg, colors.bg, styles.NONE)
-Group.new('Whitespace', colors.bg_4, colors.none, styles.NONE)
-Group.new('ToolbarLine', colors.fg, colors.bg_2, styles.NONE)
-Group.new('SignColumn', colors.fg, colors.none, styles.NONE)
-Group.new('Search', colors.bg, colors.bg_green, styles.NONE)
-
-
-
--- UI
---
-Group.new('WarningMsg', colors.yellow, colors.none, styles.bold)
-Group.new('SpecialKey', colors.bg_4, colors.none, styles.NONE)
-
-Group.new('WildMenu', groups.PmenuSel, groups.PmenuSel, groups.PmenuSel)
-Group.new('Question', colors.yellow, colors.none, styles.NONE)
-Group.new('SpellBad', colors.none, colors.none, styles.undercurl, colors.red)
-Group.new('SpellCap', colors.none, colors.none, styles.undercurl, colors.yellow)
-Group.new('SpellLocal', colors.none, colors.none, styles.undercurl, colors.blue)
-Group.new('SpellRare', colors.none, colors.none, styles.undercurl, colors.purple)
-
-Group.new('StatusLine', colors.fg, colors.bg_2, styles.NONE)
-Group.new('StatusLineTerm', colors.fg, colors.bg_2, styles.NONE)
-Group.new('StatusLineNC', colors.grey, colors.bg_1, styles.NONE)
-Group.new('StatusLineTermNC', colors.grey, colors.bg_1, styles.NONE)
-Group.new('TabLine', colors.fg, colors.bg_4, styles.NONE)
-Group.new('TabLineFill', colors.grey, colors.bg_1, styles.NONE)
-Group.new('TabLineSel', colors.bg, colors.bg_purple, styles.NONE)
-Group.new('VertSplit', colors.purple, colors.none, styles.NONE)
-Group.new('Visual', colors.none, colors.bg_3, styles.NONE)
-Group.new('VisualNOS', colors.none, colors.bg_3, styles.underline)
-Group.new('QuickFixLine', colors.purple, colors.none, styles.bold)
-Group.new('ToolbarButton', colors.bg, colors.bg_purple, styles.NONE)
+-- Group.new('Terminal', colors.fg, colors.bg, styles.NONE)
+-- Group.new('Whitespace', colors.bg_4, colors.none, styles.NONE)
 
 -- Syntax
 --
-Group.new('Type', colors.red, colors.none, styles.NONE)
-Group.new('Structure', colors.red, colors.none, styles.NONE)
-Group.new('StorageClass', colors.red, colors.none, styles.NONE)
-Group.new('Identifier', colors.cyan, colors.none, styles.NONE)
-Group.new('Constant', colors.yellow, colors.none, styles.NONE)
-Group.new('PreProc', colors.purple, colors.none, styles.NONE)
-Group.new('PreCondit', colors.purple, colors.none, styles.NONE)
-Group.new('Include', colors.purple, colors.none, styles.NONE)
-Group.new('Keyword', colors.purple, colors.none, styles.NONE)
-Group.new('Define', colors.purple, colors.none, styles.NONE)
-Group.new('Typedef', colors.purple, colors.none, styles.NONE)
-Group.new('Exception', colors.purple, colors.none, styles.NONE)
-Group.new('Conditional', colors.purple, colors.none, styles.NONE)
-Group.new('Repeat', colors.purple, colors.none, styles.NONE)
-Group.new('Statement', colors.purple, colors.none, styles.NONE)
-Group.new('Macro', colors.yellow, colors.none, styles.NONE)
-Group.new('Error', colors.red, colors.none, styles.NONE)
-Group.new('Label', colors.yellow, colors.none, styles.NONE)
-Group.new('Special', colors.yellow, colors.none, styles.NONE)
-Group.new('SpecialChar', colors.yellow, colors.none, styles.NONE)
-Group.new('Boolean', colors.green, colors.none, styles.NONE)
-Group.new('String', colors.green, colors.none, styles.NONE)
-Group.new('Character', colors.green, colors.none, styles.NONE)
-Group.new('Number', colors.green, colors.none, styles.NONE)
-Group.new('Float', colors.green, colors.none, styles.NONE)
-Group.new('Operator', colors.purple, colors.none, styles.NONE)
-Group.new('Title', colors.purple, colors.none, styles.bold)
-Group.new('Tag', colors.yellow, colors.none, styles.NONE)
-Group.new('Delimiter', colors.fg, colors.none, styles.NONE)
-Group.new('Comment', colors.grey, colors.none, styles.italic)
-Group.new('SpecialComment', colors.grey, colors.none, styles.italic)
-Group.new('Todo', colors.red, colors.none, styles.italic)
+Group.new('Type',               colors.red,         colors.none,        styles.NONE)
+Group.new('Structure',          colors.red,         colors.none,        styles.NONE)
+Group.new('StorageClass',       colors.red,         colors.none,        styles.NONE)
+Group.new('Identifier',         colors.cyan,        colors.none,        styles.NONE)
+Group.new('Constant',           colors.yellow,      colors.none,        styles.NONE)
+Group.new('PreProc',            colors.purple,      colors.none,        styles.NONE)
+Group.new('PreCondit',          colors.purple,      colors.none,        styles.NONE)
+Group.new('Include',            colors.purple,      colors.none,        styles.NONE)
+Group.new('Keyword',            colors.purple,      colors.none,        styles.NONE)
+Group.new('Define',             colors.purple,      colors.none,        styles.NONE)
+Group.new('Typedef',            colors.purple,      colors.none,        styles.NONE)
+Group.new('Exception',          colors.purple,      colors.none,        styles.NONE)
+Group.new('Conditional',        colors.purple,      colors.none,        styles.NONE)
+Group.new('Repeat',             colors.purple,      colors.none,        styles.NONE)
+Group.new('Statement',          colors.purple,      colors.none,        styles.NONE)
+Group.new('Macro',              colors.yellow,      colors.none,        styles.NONE)
+Group.new('Error',              colors.red,         colors.none,        styles.NONE)
+Group.new('Label',              colors.yellow,      colors.none,        styles.NONE)
+Group.new('Special',            colors.yellow,      colors.none,        styles.NONE)
+Group.new('SpecialChar',        colors.yellow,      colors.none,        styles.NONE)
+Group.new('Boolean',            colors.green,       colors.none,        styles.NONE)
+Group.new('String',             colors.green,       colors.none,        styles.NONE)
+Group.new('Character',          colors.green,       colors.none,        styles.NONE)
+Group.new('Number',             colors.green,       colors.none,        styles.NONE)
+Group.new('Float',              colors.green,       colors.none,        styles.NONE)
+Group.new('Operator',           colors.purple,      colors.none,        styles.NONE)
+Group.new('Title',              colors.purple,      colors.none,        styles.bold)
+Group.new('Tag',                colors.yellow,      colors.none,        styles.NONE)
+Group.new('Delimiter',          colors.fg,          colors.none,        styles.NONE)
+Group.new('Comment',            colors.grey,        colors.none,        styles.italic)
+Group.new('SpecialComment',     colors.grey,        colors.none,        styles.italic)
+Group.new('Todo',               colors.red,         colors.none,        styles.italic)
 
 -- Predifined Highlight Groups
 --
-Group.new('RedItalic', colors.red, colors.none, styles.NONE)
-Group.new('YellowItalic', colors.yellow, colors.none, styles.NONE)
-Group.new('GreenItalic', colors.green, colors.none, styles.NONE)
-Group.new('CyanItalic', colors.cyan, colors.none, styles.NONE)
-Group.new('BlueItalic', colors.blue, colors.none, styles.NONE)
-Group.new('PurpleItalic', colors.purple, colors.none, styles.NONE)
+Group.new('RedItalic',          colors.red,         colors.none,        styles.NONE)
+Group.new('YellowItalic',       colors.yellow,      colors.none,        styles.NONE)
+Group.new('GreenItalic',        colors.green,       colors.none,        styles.NONE)
+Group.new('CyanItalic',         colors.cyan,        colors.none,        styles.NONE)
+Group.new('BlueItalic',         colors.blue,        colors.none,        styles.NONE)
+Group.new('PurpleItalic',       colors.purple,      colors.none,        styles.NONE)
 
 Group.new('RedSign', colors.red, colors.none, styles.NONE)
 Group.new('YellowSign', colors.yellow, colors.none, styles.NONE)
@@ -182,12 +176,14 @@ Group.new('VirtualTextHint', colors.green, colors.none, styles.NONE)
 
 Group.new('CurrentWord', colors.none, colors.none, styles.bold)
 
-Group.new('Substitute', colors.bg, colors.yellow, styles.NONE)
+Group.new('Substitute',         colors.bg,          colors.yellow,      styles.NONE)
 
-Group.new('DiagnosticError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
-Group.new('DiagnosticWarn', groups.WarningText, groups.WarningText, groups.WarningText)
-Group.new('DiagnosticInfo', groups.InfoText, groups.InfoText, groups.InfoText)
-Group.new('DiagnosticHint', groups.HintText, groups.HintText, groups.HintText)
+-- LSP 
+--
+Group.new('DiagnosticError',    groups.ErrorText,    groups.ErrorText,      groups.ErrorText)
+Group.new('DiagnosticWarn',     groups.WarningText,  groups.WarningText,    groups.WarningText)
+Group.new('DiagnosticInfo',     groups.InfoText,     groups.InfoText,       groups.InfoText)
+Group.new('DiagnosticHint',     groups.HintText,     groups.HintText,       groups.HintText)
 
 Group.new('DiagnosticFloatingError', groups.ErrorFloat, groups.ErrorFloat, groups.ErrorFloat)
 Group.new('DiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, groups.WarningFloat)
@@ -330,5 +326,28 @@ Group.new('GitSignsCurrentLineBlame', groups.Grey, groups.Grey, groups.Grey)
 -- rcarriga/nvim-dap-ui
 
 -- kyazdani42/nvim-tree.lua
+--
+-- highlight! link NvimTreeSymlink Fg
+-- highlight! link NvimTreeFolderName Green
+-- highlight! link NvimTreeRootFolder Grey
+-- highlight! link NvimTreeFolderIcon Blue
+-- highlight! link NvimTreeEmptyFolderName Green
+-- highlight! link NvimTreeOpenedFolderName Green
+-- highlight! link NvimTreeExecFile Fg
+-- highlight! link NvimTreeOpenedFile Fg
+-- highlight! link NvimTreeSpecialFile Fg
+-- highlight! link NvimTreeImageFile Fg
+-- highlight! link NvimTreeMarkdownFile Fg
+-- highlight! link NvimTreeIndentMarker Grey
+-- highlight! link NvimTreeGitDirty Yellow
+-- highlight! link NvimTreeGitStaged Blue
+-- highlight! link NvimTreeGitMerge Cyan
+-- highlight! link NvimTreeGitRenamed Purple
+-- highlight! link NvimTreeGitNew Green
+-- highlight! link NvimTreeGitDeleted Red
+-- highlight! link NvimTreeLspDiagnosticsError RedSign
+-- highlight! link NvimTreeLspDiagnosticsWarning YellowSign
+-- highlight! link NvimTreeLspDiagnosticsInformation BlueSign
+-- highlight! link NvimTreeLspDiagnosticsHint GreenSign
 
 -- mhinz/vim-startify
