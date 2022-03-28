@@ -100,9 +100,6 @@ Group.new('VisualNOS',          colors.none,        colors.bg_3,        styles.u
 Group.new('WarningMsg',         colors.yellow,      colors.none,        styles.bold)
 Group.new('WildMenu',           groups.PmenuSel,    groups.PmenuSel,    groups.PmenuSel)
 
--- Group.new('Terminal', colors.fg, colors.bg, styles.NONE)
--- Group.new('Whitespace', colors.bg_4, colors.none, styles.NONE)
-
 -- Syntax
 --
 Group.new('Type',               colors.red,         colors.none,        styles.NONE)
@@ -299,7 +296,7 @@ Group.new('TSVariableBuiltin', groups.CyanItalic, groups.CyanItalic, groups.Cyan
 
 -- RRethy/vim-illuminate
 --
-Group.new('illuminatedWork', colors.none, colors.none, styles.bold)
+-- Group.new('illuminatedWork', colors.none, colors.none, styles.bold)
 
 -- nvim-telescope/telescope.nvim
 --
