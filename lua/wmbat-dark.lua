@@ -327,27 +327,27 @@ Group.new('GitSignsCurrentLineBlame', groups.Grey, groups.Grey, groups.Grey)
 
 -- kyazdani42/nvim-tree.lua
 --
--- highlight! link NvimTreeSymlink Fg
--- highlight! link NvimTreeFolderName Green
--- highlight! link NvimTreeRootFolder Grey
--- highlight! link NvimTreeFolderIcon Blue
--- highlight! link NvimTreeEmptyFolderName Green
--- highlight! link NvimTreeOpenedFolderName Green
--- highlight! link NvimTreeExecFile Fg
--- highlight! link NvimTreeOpenedFile Fg
--- highlight! link NvimTreeSpecialFile Fg
--- highlight! link NvimTreeImageFile Fg
--- highlight! link NvimTreeMarkdownFile Fg
--- highlight! link NvimTreeIndentMarker Grey
--- highlight! link NvimTreeGitDirty Yellow
--- highlight! link NvimTreeGitStaged Blue
--- highlight! link NvimTreeGitMerge Cyan
--- highlight! link NvimTreeGitRenamed Purple
--- highlight! link NvimTreeGitNew Green
--- highlight! link NvimTreeGitDeleted Red
--- highlight! link NvimTreeLspDiagnosticsError RedSign
--- highlight! link NvimTreeLspDiagnosticsWarning YellowSign
--- highlight! link NvimTreeLspDiagnosticsInformation BlueSign
--- highlight! link NvimTreeLspDiagnosticsHint GreenSign
+Group.new('NvimTreeSymlink', groups.Fg, groups.Fg, groups.Fg)
+Group.new('NvimTreeFolderName', groups.Green, groups.Green, groups.Green)
+Group.new('NvimTreeRootFolder', groups.Grey, groups.Grey, groups.Grey)
+Group.new('NvimTreeFolderIcon', groups.Blue, groups.Blue, groups.Blue)
+Group.new('NvimTreeEmptyFolderName', groups.Green, groups.Green, groups.Green)
+Group.new('NvimTreeOpenedFolderName', groups.Green, groups.Green, groups.Green)
+Group.new('NvimTreeExecFile', groups.Fg, groups.Fg, groups.Fg)
+Group.new('NvimTreeOpenedFile', groups.Fg, groups.Fg, groups.Fg)
+Group.new('NvimTreeSpecialFile', groups.Fg, groups.Fg, groups.Fg)
+Group.new('NvimTreeImageFile', groups.Fg, groups.Fg, groups.Fg)
+Group.new('NvimTreeMarkdownFile', groups.Fg, groups.Fg, groups.Fg)
+Group.new('NvimTreeIndentMarker', groups.Grey, groups.Grey, groups.Grey)
+Group.new('NvimTreeGitDirty', groups.Yellow, groups.Yellow, groups.Yellow)
+Group.new('NvimTreeGitStaged', groups.Blue, groups.Blue, groups.Blue)
+Group.new('NvimTreeGitMerge', groups.Cyan, groups.Cyan, groups.Cyan)
+Group.new('NvimTreeGitRenamed', groups.Purple, groups.Purple, groups.Purple)
+Group.new('NvimTreeGitNew', groups.Green, groups.Green, groups.Green)
+Group.new('NvimTreeGitDeleted', groups.Red, groups.Red, groups.Red)
+Group.new('NvimTreeLspDiagnosticsError', groups.RedSign, groups.RedSign, groups.RedSign)
+Group.new('NvimTreeLspDiagnosticsWarning', groups.YellowSign, groups.YellowSign, groups.YellowSign)
+Group.new('NvimTreeLspDiagnosticsInformation', groups.BlueSign, groups.BlueSign, groups.BlueSign)
+Group.new('NvimTreeLspDiagnosticsHint', groups.GreenSign, groups.GreenSign, groups.GreenSign)
 
 -- mhinz/vim-startify
