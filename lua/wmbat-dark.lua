@@ -137,12 +137,12 @@ Group.new('Todo',               colors.red,         colors.none,        styles.i
 
 -- Predifined Highlight Groups
 --
-Group.new('RedItalic',          colors.red,         colors.none,        styles.NONE)
-Group.new('YellowItalic',       colors.yellow,      colors.none,        styles.NONE)
-Group.new('GreenItalic',        colors.green,       colors.none,        styles.NONE)
-Group.new('CyanItalic',         colors.cyan,        colors.none,        styles.NONE)
-Group.new('BlueItalic',         colors.blue,        colors.none,        styles.NONE)
-Group.new('PurpleItalic',       colors.purple,      colors.none,        styles.NONE)
+Group.new('RedItalic',          colors.red,         colors.none,        styles.italic)
+Group.new('YellowItalic',       colors.yellow,      colors.none,        styles.italic)
+Group.new('GreenItalic',        colors.green,       colors.none,        styles.italic)
+Group.new('CyanItalic',         colors.cyan,        colors.none,        styles.italic)
+Group.new('BlueItalic',         colors.blue,        colors.none,        styles.italic)
+Group.new('PurpleItalic',       colors.purple,      colors.none,        styles.italic)
 
 Group.new('RedSign', colors.red, colors.none, styles.NONE)
 Group.new('YellowSign', colors.yellow, colors.none, styles.NONE)
