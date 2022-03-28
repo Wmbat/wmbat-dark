@@ -72,10 +72,7 @@ Group.new('iCursor', nil, nil, styles.reverse)
 Group.new('lCursor', nil, nil, styles.reverse)
 Group.new('CursorIM', nil, nil, styles.reverse)
 
-vim.cmd([[highlight Normal ctermbg=235]])
-vim.cmd([[highlight Terminal ctermbg=235]])
-
--- Group.new('CursorLine', nil, nil, styles.NONE) 
+Group.new('CursorLine', nil, nil, styles.NONE) 
 -- Group.new('CursorColumn', nil, nil, styles.NONE) 
 Group.new('LineNr', colors.grey_dim, nil, styles.NONE)
 -- Group.net('CursorLineNr', colors.grey, nil, styles.NONE)
@@ -209,10 +206,10 @@ Group.new('DiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat, gr
 Group.new('DiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
 Group.new('DiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
 
-Group.new('DiagnosticVirtualTextError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
-Group.new('DiagnosticVirtualTextWarn', groups.WarningText, groups.WarningText, groups.WarningText)
-Group.new('DiagnosticVirtualTextInfo', groups.InfoText, groups.InfoText, groups.InfoText)
-Group.new('DiagnosticVirtualTextHint', groups.HintText, groups.HintText, groups.HintText)
+Group.new('DiagnosticVirtualTextError', groups.VirtualErrorText, groups.VirtualErrorText, groups.VirtualErrorText)
+Group.new('DiagnosticVirtualTextWarn', groups.VirtualWarningText, groups.VirtualWarningText, groups.VirtualWarningText)
+Group.new('DiagnosticVirtualTextInfo', groups.VirtualInfoText, groups.VirtualInfoText, groups.VirtualInfoText)
+Group.new('DiagnosticVirtualTextHint', groups.VirtualHintText, groups.VirtualHintText, groups.VirtualHintText)
 
 Group.new('DiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
 Group.new('DiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
@@ -234,10 +231,10 @@ Group.new('LspDiagnosticFloatingWarn', groups.WarningFloat, groups.WarningFloat,
 Group.new('LspDiagnosticFloatingInfo', groups.InfoFloat, groups.InfoFloat, groups.InfoFloat)
 Group.new('LspDiagnosticFloatingHint', groups.HintFloat, groups.HintFloat, groups.HintFloat)
 
-Group.new('LspDiagnosticVirtualTextError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
-Group.new('LspDiagnosticVirtualTextWarn', groups.WarningText, groups.WarningText, groups.WarningText)
-Group.new('LspDiagnosticVirtualTextInfo', groups.InfoText, groups.InfoText, groups.InfoText)
-Group.new('LspDiagnosticVirtualTextHint', groups.HintText, groups.HintText, groups.HintText)
+Group.new('LspDiagnosticVirtualTextError', groups.VirtualErrorText, groups.VirtualErrorText, groups.VirtualErrorText)
+Group.new('LspDiagnosticVirtualTextWarn', groups.VirtualWarningText, groups.VirtualWarningText, groups.VirtualWarningText)
+Group.new('LspDiagnosticVirtualTextInfo', groups.VirtualInfoText, groups.VirtualInfoText, groups.VirtualInfoText)
+Group.new('LspDiagnosticVirtualTextHint', groups.VirtualHintText, groups.VirtualHintText, groups.VirtualHintText)
 
 Group.new('LspDiagnosticUnderlineError', groups.ErrorText, groups.ErrorText, groups.ErrorText)
 Group.new('LspDiagnosticUnderlineWarn', groups.WarningText, groups.WarningText, groups.WarningText)
