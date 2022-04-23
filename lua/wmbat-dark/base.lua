@@ -27,6 +27,8 @@ vim.o.background = 'dark'
 
 vim.g.colors_name = "wmbat-dark"
 
+local table_concat = table.concat
+
 local base_group = lush(function()
 	return {
 		wmbat_dark_fg { fg = fg },
@@ -66,7 +68,7 @@ local base_group = lush(function()
 		DiffChange { bg = blue },
 		DiffDelete { bg = red },
 		DiffText { fg = bg_0, bg = blue },
-		ErrorMsg { fg = red, gui = table.concat({ styles.bold, styles.underline }, ',') },
+		ErrorMsg { fg = red, gui = table_concat({ styles.bold, styles.underline }, ',') },
 		VertSplit { fg = purple },
 		Folded { fg = grey_0 }
 	}
