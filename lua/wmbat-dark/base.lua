@@ -61,13 +61,13 @@ local base_group = lush(function()
 		CursorIM { Cursor },
 		CursorLine { },
 		CursorColumn { },
-		Directory { wmbat_dark_green }
-		DiffAdd { bg = green }
-		DiffChange { bg = blue }
-		DiffDelete { bg = red }
-		DiffText { fg = bg_0, bg = blue }
-		ErrorMsg { fg = red, gui = table.concat({ styles.bold, styles.underline }, ',') }
-		VertSplit { fg = purple }
+		Directory { wmbat_dark_green },
+		DiffAdd { bg = green },
+		DiffChange { bg = blue },
+		DiffDelete { bg = red },
+		DiffText { fg = bg_0, bg = blue },
+		ErrorMsg { fg = red, gui = table.concat({ styles.bold, styles.underline }, ',') },
+		VertSplit { fg = purple },
 		Folded { fg = grey_0 }
 	}
 end)
