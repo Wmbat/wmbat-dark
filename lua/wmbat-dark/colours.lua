@@ -1,7 +1,7 @@
 local hsl = require('lush.hsl')
 
 return {
-	white = hsl(#c5cdd9'),
+	white = hsl('#c5cdd9'),
 	black_0 = hsl('#202023'),
 	black_1 = hsl('#333648'),
 	black_2 = hsl('#363a4e'),
