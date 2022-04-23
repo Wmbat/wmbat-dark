@@ -7,8 +7,6 @@ M.tobool = function(val)
 	return true
 end
 
--- check if vim.g.codeschool_* color exists in current palette, return default color
--- otherwise
 M.get_color_from_var = function(color, default, colors)
 	if color == nil then
 		return default
