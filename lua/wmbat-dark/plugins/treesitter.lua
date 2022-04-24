@@ -10,8 +10,6 @@ vim.pretty_print(lush)
 vim.pretty_print(table_concat)
 
 local group = lush(function()
-	vim.pretty_print("inside lush")
-
 	return {
 		TSNone {},
 		TSError { wmbat_dark_error },
