@@ -8,6 +8,11 @@ local table_concat = table.concat
 local M = {}
 
 vim.pretty_print('treesitter plugin colours')
+vim.pretty_print(lush)
+vim.pretty_print(base)
+vim.pretty_print(styles)
+vim.pretty_print(colours)
+vim.pretty_print(table_concat)
 
 M = lush(function()
 	return {
