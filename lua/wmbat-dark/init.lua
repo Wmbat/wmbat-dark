@@ -7,6 +7,7 @@ local config = config_module.config
 local function setup(user_config)
 
 	vim.pretty_print(user_config)
+	vim.pretty_print(config_module)
 
 	if user_config then
 		config_module.apply_config(user_config)

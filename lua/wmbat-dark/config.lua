@@ -27,6 +27,8 @@ local function apply_config(config_table)
 	if config_table.langs then
 		config.langs = config_table.langs
 	end
+
+	vim.pretty_print(config)
 end
 
 return {config = config, apply_config = apply_config}
