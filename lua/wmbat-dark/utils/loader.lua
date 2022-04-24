@@ -10,7 +10,7 @@ local function load_plugins(config)
 		vim.pretty_print(plugin)
 
 		if type(plugin) == 'string' then
-			local plugin_path = 'wmbat-dark.plugins.' .. plugin)
+			local plugin_path = 'wmbat-dark.plugins.' .. plugin
 
 			vim.pretty_print(plugin_path)
 
