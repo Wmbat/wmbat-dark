@@ -53,8 +53,8 @@ local base_group = lush(function()
 		wmbat_dark_purple_underline { gui = styles.undercurl, sp = purple },
 		wmbat_dark_orange_underline { gui = styles.undercurl, sp = orange },
 
-		wmbat_dark_error { fg = red }
-		wmbat_dark_warning { fg = orange }
+		wmbat_dark_error { fg = red },
+		wmbat_dark_warning { fg = orange },
 
 		ColorCulumn { },
 		Conceal { fg = grey_1 },
