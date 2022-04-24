@@ -56,6 +56,7 @@ local base_group = lush(function()
 		wmbat_dark_error { fg = red },
 		wmbat_dark_warning { fg = orange },
 
+		Whitespace { fg = grey_1 },
 		ColorCulumn { },
 		Conceal { fg = grey_1 },
 		Cursor { bg = purple },
@@ -77,6 +78,13 @@ local base_group = lush(function()
 		IncSearch { fg = bg_0, bg = blue },
 		LineNr { fg = grey_1 },
 		CursorLineNr { fg = grey_0 },
+		NonText { fg = bg_2 }
+		Normal { fg = fg, bg = bg_0 },
+		NormalFloat { fg = fg, bg = bg_2 },
+		Pmenu { fg = fg, bg = bg_2 },
+		PmenuSBar { bg = bg_2 },
+		PmenuSel { fg = bg, bg = blue },
+		PmenuThumb { bg = grey_0 },
 	}
 end)
 
