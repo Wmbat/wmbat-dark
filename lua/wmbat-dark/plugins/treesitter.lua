@@ -63,6 +63,4 @@ local group = lush(function()
 	}
 end)
 
-vim.pretty_print(group)
-
 return group
