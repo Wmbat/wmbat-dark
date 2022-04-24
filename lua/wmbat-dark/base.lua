@@ -83,7 +83,7 @@ local base_group = lush(function()
 		NormalFloat { fg = fg, bg = bg_2 },
 		Pmenu { fg = fg, bg = bg_2 },
 		PmenuSbar { bg = bg_2 },
-		PmenuSel { fg = bg, bg = blue },
+		PmenuSel { fg = bg_0, bg = blue },
 		PmenuThumb { bg = grey_0 },
 	}
 end)
