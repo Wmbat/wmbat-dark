@@ -72,7 +72,11 @@ local base_group = lush(function()
 		DiffText { fg = bg_0, bg = blue },
 		ErrorMsg { fg = red, gui = table_concat({ styles.bold, styles.underline }, ',') },
 		VertSplit { fg = purple },
-		Folded { fg = grey_0 }
+		Folded { fg = grey_0 },
+		SignColumn { fg = fg },
+		IncSearch { fg = bg_0, bg = blue },
+		LineNr { fg = grey_1 },
+		CursorLineNr { fg = grey_0 }
 	}
 end)
 

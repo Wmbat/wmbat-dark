@@ -2,7 +2,7 @@
 local lush = require("lush")
 local base = require("wmbat-dark.base")
 local styles = require("wmbat-dark.settings").styles
-local colors = require("wmbat-dark.colors")
+local colours = require("wmbat-dark.colours")
 local table_concat = table.concat
 
 local M = {}
