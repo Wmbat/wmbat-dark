@@ -76,7 +76,7 @@ local base_group = lush(function()
 		SignColumn { fg = fg },
 		IncSearch { fg = bg_0, bg = blue },
 		LineNr { fg = grey_1 },
-		CursorLineNr { fg = grey_0 }
+		CursorLineNr { fg = grey_0 },
 	}
 end)
 
