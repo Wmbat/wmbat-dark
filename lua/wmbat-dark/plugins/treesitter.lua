@@ -5,13 +5,13 @@ local styles = require("wmbat-dark.settings").styles
 local colours = require("wmbat-dark.colours")
 local table_concat = table.concat
 
-local M = {}
-
 vim.pretty_print('treesitter plugin colours')
 vim.pretty_print(lush)
 vim.pretty_print(table_concat)
 
-M = lush(function()
+local group = lush(function()
+	vim.pretty_print("inside lush")
+
 	return {
 		TSNone {},
 		TSError { wmbat_dark_error },
@@ -21,6 +21,6 @@ M = lush(function()
 	}
 end)
 
-vim.pretty_print(M)
+vim.pretty_print(group)
 
-return M
+return group
