@@ -7,6 +7,8 @@ local table_concat = table.concat
 
 local M = {}
 
+vim.pretty_print('treesitter plugin colours')
+
 M = lush(function()
 	return {
 		TSNone {},
@@ -16,5 +18,7 @@ M = lush(function()
 		TSUnderline { gui = styles.underline },
 	}
 end)
+
+vim.pretty_print(M)
 
 return M
