@@ -13,6 +13,8 @@ local function setup(user_config)
 		config_module.apply_config(user_config)
 	end
 
+	vim.pretty_print(config)
+
 	local load_plugins = loader.load_plugins(config)
 		
 	vim.pretty_print(load_plugins)
