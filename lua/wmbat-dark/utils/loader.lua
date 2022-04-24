@@ -6,13 +6,20 @@ local function load_plugins(config)
 	vim.pretty_print('loading plugins...')
 
 	for index, plugin in pairs(config.plugins) do
+		
+		vim.pretty_print(plugin)
+
 		if type(plugin) == 'string' then
+			vim.pretty_print('string path')
+
 			local local_plugin = require('wmbat-dark.plugins.' .. plugin)
 			
 			vim.pretty_print(local_plugin)
 
 			config.plugins[index] = local_plugin
 		elseif type(plugin) == 'table' then
+			vim.pretty_print('table path')
+
 			config.plugins[index] = plugin
 		end
 	end
