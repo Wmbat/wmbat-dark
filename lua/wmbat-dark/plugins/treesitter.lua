@@ -45,7 +45,7 @@ local group = lush(function()
 		TSString { fg = colours.green },
 		TSStringEscape { fg = colours.yellow },
 		TSStringRegex { fg = colours.yellow },
-		TSStructure { fg = colours.cyan, gui = styles.italic }
+		TSStructure { fg = colours.cyan, gui = styles.italic },
 		TSSymbol { fg = colours.red },
 		TSTag { fg = colours.red, gui = styles.italic },
 		TSTagDelimiter { fg = colours.purple },
