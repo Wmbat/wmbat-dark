@@ -66,6 +66,7 @@ local base_group = lush(function()
 		CursorIM { Cursor },
 		CursorLine { },
 		CursorColumn { },
+		CurrentWord { gui = styles.bold },
 		Directory { wmbat_dark_green },
 		DiffAdd { bg = green },
 		DiffChange { bg = blue },

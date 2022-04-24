@@ -15,7 +15,7 @@ local group = lush(function()
 		TSAttribute { fg = colours.yellow },
 		TSBoolean { fg = colours.green },
 		TSCharacter { fg = colours.green },
-		TSComment { fg = colours.dark_green },
+		TSComment { fg = colours.grey_0 },
 		TSConditional { fg = colours.purple },
 		TSConstBuiltin { fg = colours.cyan, gui = styles.italic },
 		TSConstMacro { fg = colours.cyan, gui = styles.italic },
