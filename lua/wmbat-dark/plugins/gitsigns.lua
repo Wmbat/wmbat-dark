@@ -19,3 +19,5 @@ local group = lush(function()
 		GitSignsCurrentLineBlame { fg = colours.grey_0 },
 	}
 end)
+
+return group
