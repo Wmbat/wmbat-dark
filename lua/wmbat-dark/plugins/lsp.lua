@@ -23,7 +23,7 @@ local group = lush(function()
 		LspDiagnosticVirtualTextHint { LspDiagnosticDefaultHint },
 
 		LspDiagnosticUnderlineError { fg = colours.red, gui = styles.undercurl },
-		LspDiagnosticUnderlineWarn { fg = colours.orange, gui = styles.undercurl }
+		LspDiagnosticUnderlineWarn { fg = colours.orange, gui = styles.undercurl },
 		LspDiagnosticUnderlineInfo { fg = colours.blue, gui = styles.undercurl },
 		LspDiagnosticUnderlineHint { fg = colours.green, gui = styles.undercurl },
 
