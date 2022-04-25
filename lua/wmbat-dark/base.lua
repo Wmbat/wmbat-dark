@@ -59,7 +59,7 @@ local base_group = lush(function()
 		Whitespace { fg = grey_1 },
 		ColorCulumn { },
 		Conceal { fg = grey_1 },
-		Cursor { bg = grey_2 },
+		Cursor { gui = styles.inverse },
 		lCursor { Cursor },
 		iCursor { Cursor },
 		vCursor { Cursor },
@@ -89,9 +89,8 @@ local base_group = lush(function()
 		PmenuThumb { bg = grey_0 },
 		Question { fg = orange },
 -- 		QuickFixLine { fg = purple, gui = styles.bold },
-		Search { fg = bg_0, bg = colours.dark_green },
+		Search { fg = bg_0, bg = fg},
 -- 		SignColumn { fg = fg },
-
 
 		Type { fg = red },
 		Structure { fg = red },
