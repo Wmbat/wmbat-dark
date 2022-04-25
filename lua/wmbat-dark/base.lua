@@ -66,7 +66,7 @@ local base_group = lush(function()
 		CursorIM { Cursor },
 		CursorLine { },
 		CursorColumn { },
-		TermCursor { cursor },
+-- 		TermCursor { cursor },
 		CurrentWord { gui = styles.bold },
 		Directory { wmbat_dark_green },
 		DiffAdd { bg = green },
@@ -88,8 +88,8 @@ local base_group = lush(function()
 		PmenuSel { fg = bg_0, bg = blue },
 		PmenuThumb { bg = grey_0 },
 		Question { fg = orange },
-		QuickFixLine { fg = purple, gui = styles.bold },
--- 		Search { fg = bg_0, bg = colours.dark_green },
+-- 		QuickFixLine { fg = purple, gui = styles.bold },
+		Search { fg = bg_0, bg = colours.dark_green },
 -- 		SignColumn { fg = fg },
 
 
