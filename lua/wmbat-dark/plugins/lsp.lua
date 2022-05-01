@@ -8,7 +8,7 @@ local table_concat = table.concat
 local group = lush(function()
 	return {
 		LspDiagnosticDefaultError { fg = colours.red }, 
-		LspDiagnosticDefaultWarn { fg = colours.orange }, 
+		LspDiagnosticDefaultWarn { fg = colours.yellow }, 
 		LspDiagnosticDefaultInfo { fg = colours.blue },
 		LspDiagnosticDefaultHint { fg = colours.green },
 
@@ -23,7 +23,7 @@ local group = lush(function()
 		LspDiagnosticVirtualTextHint { LspDiagnosticDefaultHint },
 
 		LspDiagnosticUnderlineError { fg = colours.red, gui = styles.undercurl },
-		LspDiagnosticUnderlineWarn { fg = colours.orange, gui = styles.undercurl },
+		LspDiagnosticUnderlineWarn { fg = colours.yellow, gui = styles.undercurl },
 		LspDiagnosticUnderlineInfo { fg = colours.blue, gui = styles.undercurl },
 		LspDiagnosticUnderlineHint { fg = colours.green, gui = styles.undercurl },
 

@@ -9,7 +9,7 @@ local group = lush(function()
 	return {
 		TSNone {},
 		TSNote { fg = colours.black_0, bg = colours.blue },
-		TSWarning { fg = colours.black_0, bg = colours.orange },
+		TSWarning { fg = colours.black_0, bg = colours.yellow },
 		TSDanger { fg = colours.black_0, bg = colours.red },
 		TSAnnotation { fg = colours.purple },
 		TSAttribute { fg = colours.yellow },

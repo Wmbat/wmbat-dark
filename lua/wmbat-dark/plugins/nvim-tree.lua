@@ -26,7 +26,7 @@ local group = lush(function()
 		NvimTreeGitNew { fg = colours.green },
 		NvimTreeGitDeleted { fg = colours.red },
 		NvimTreeLspDiagnosticsError { fg = colours.red },
-		NvimTreeLspDiagnosticsWarning { fg = colours.orange },
+		NvimTreeLspDiagnosticsWarning { fg = colours.yellow },
 		NvimTreeLspDiagnosticsInformation { fg = colours.blue },
 		NvimTreeLspDiagnosticsHint { fg = colours.green }
 	}
