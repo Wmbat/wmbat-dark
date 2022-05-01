@@ -3,8 +3,6 @@
 local lush = require("lush")
 
 local function load_plugins(config)
-	vim.pretty_print('loading plugins...')
-
 	for index, plugin in pairs(config.plugins) do
 		if type(plugin) == 'string' then
 			local local_plugin = require('wmbat-dark.plugins.' .. plugin)	
@@ -19,8 +17,6 @@ local function load_plugins(config)
 end
 
 local function load_langs(config)
-	vim.pretty_print('loading langs...')
-
 	for index, lang in pairs(config.langs) do
 		if type(lang) == 'string' then
 			local local_lang = require('wmbat-dark.languages.' .. lang)
