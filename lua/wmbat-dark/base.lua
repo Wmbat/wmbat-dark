@@ -25,6 +25,23 @@ local grey_2 = colours.grey_2
 
 vim.o.background = 'dark'
 
+vim.g.terminal_color_0 = bg_0.hex
+vim.g.terminal_color_1 = colours.dark_red.hex
+vim.g.terminal_color_2 = colours.dark_green.hex
+vim.g.terminal_color_3 = colours.dark_yellow.hex
+vim.g.terminal_color_4 = colours.dark_blue.hex
+vim.g.terminal_color_5 = purple.hex
+vim.g.terminal_color_6 = cyan.hex
+vim.g.terminal_color_7 = grey_0.hex
+vim.g.terminal_color_8 = grey_2.hex
+vim.g.terminal_color_9 = red.hex
+vim.g.terminal_color_10 = green.hex
+vim.g.terminal_color_11 = yellow.hex
+vim.g.terminal_color_12 = blue.hex
+vim.g.terminal_color_13 = purple.hex
+vim.g.terminal_color_14 = cyan.hex
+vim.g.terminal_color_15 = fg.hex
+
 vim.g.colors_name = "wmbat-dark"
 
 local table_concat = table.concat

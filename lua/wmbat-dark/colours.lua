@@ -20,5 +20,5 @@ return {
 	orange = hsl('#f87c37'),
 	grey_0 = hsl('#7e8294'),
 	grey_1 = hsl('#5c6071'),
-	grey_3 = hsl('#7a819d'),
+	grey_2 = hsl('#7a819d'),
 }

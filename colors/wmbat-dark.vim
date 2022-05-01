@@ -1,1 +1,1 @@
-lua require('wmbat-dark')
+lua require('lush')(require('wmbat-dark').setup())
