@@ -18,8 +18,8 @@ local group = lush(function()
 		UnderlineHint { fg = colours.blue, gui = styles.undercurl },
 
 		DiagnosticError { TextError }, 
-		DiagnosticWarn { TextWarning }, 
-		DiagnosticInfo { TextInformation },
+		DiagnosticWarn {  TextWarning }, 
+		DiagnosticInfo {  TextInformation },
 		DiagnosticHint { TextHint },
 
 		DiagnosticFloatingError { TextError }, 
