@@ -279,7 +279,7 @@ local theme = lush(function(injected_functions)
 		sym"@exception" { fg = purple }, -- Exception
 		sym"@variable" { fg = red }, -- Identifier
 		sym"@type" { fg = yellow }, -- Type
-		sym"@type.definition" { fg = yellow }, -- Typedef
+		sym"@type.definition" { fg = purple }, -- Typedef
 		-- sym"@storageclass"     { }, -- StorageClass
 		sym"@structure" { fg = colours.cyan, gui = styles.italic }, -- Structure
 		sym"@namespace" { fg = yellow }, -- Identifier
