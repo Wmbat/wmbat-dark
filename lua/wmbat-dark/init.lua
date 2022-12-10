@@ -266,7 +266,7 @@ local theme = lush(function(injected_functions)
 		sym"@function" { fg = blue }, -- Function
 		sym"@function.builtin" { fg= blue }, -- Special
 		sym"@function.macro" { fg = blue }, -- Macro
-		sym"@parameter" { fg = grey_1, gui = styles.italic }, -- Identifier
+		sym"@parameter" { fg = red, gui = styles.italic }, -- Identifier
 		sym"@method" { fg = blue }, -- Function
 		sym"@field" { fg = blue }, -- Identifier
 		sym"@property" { fg = red, gui = styles.italic }, -- Identifier
@@ -279,7 +279,7 @@ local theme = lush(function(injected_functions)
 		sym"@exception" { fg = purple }, -- Exception
 		sym"@variable" { fg = red }, -- Identifier
 		sym"@type" { fg = yellow }, -- Type
-		sym"@type.definition" { fg = purple }, -- Typedef
+		sym"@type.definition" { fg = yellow }, -- Typedef
 		-- sym"@storageclass"     { }, -- StorageClass
 		sym"@structure" { fg = colours.cyan, gui = styles.italic }, -- Structure
 		sym"@namespace" { fg = yellow }, -- Identifier
