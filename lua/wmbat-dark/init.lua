@@ -100,6 +100,7 @@ local theme = lush(function(injected_functions)
 		NonText { fg = bg_2 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal { fg = fg, bg = bg_0 }, -- Normal text
 		NormalFloat { fg = fg, bg = bg_0 }, -- Normal text in floating windows.
+		FloatBorder { fg = blue, bg = bg_0 },
 		-- NormalNC     { }, -- normal text in non-current windows
 		Pmenu { fg = fg, bg = bg_2 }, -- Popup menu: Normal item.
 		PmenuSel { fg = bg_0, bg = blue }, -- Popup menu: Selected item.
@@ -329,8 +330,8 @@ local theme = lush(function(injected_functions)
 		-- Telescope 
 		-- 
 		TelescopeMatching { fg = colours.green, gui = styles.bold },
-		TelescopeBorder { fg = colours.purple },
-		TelescopePromptPrefix { fg = colours.blue },
+		TelescopeBorder { fg = colours.blue },
+		TelescopePromptPrefix { fg = colours.purple },
 		TelescopeSelection { bg = colours.dark_green },
 
 		-- Vim Startify
