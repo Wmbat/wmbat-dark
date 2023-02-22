@@ -356,8 +356,8 @@ local theme = lush(function(injected_functions)
 		rainbowcol7 { fg = colours.orange },
 
 		AerialFunctionIcon { fg = colours.purple },
-		AerialLine { Pmenu },
-		AerialLineNC { Pmenu },
+		AerialLine { fg = colours.red, bg = bg_2 },
+		AerialLineNC { fg = colours.red, bg = bg_2  },
 
 		-- C++
 		-- 
