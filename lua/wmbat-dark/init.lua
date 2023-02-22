@@ -355,6 +355,10 @@ local theme = lush(function(injected_functions)
 		rainbowcol6 { fg = colours.purple },
 		rainbowcol7 { fg = colours.orange },
 
+		AerialFunctionIcon { fg = colours.purple },
+		AerialLine { Pmenu },
+		AerialLineNC { Pmenu },
+
 		-- C++
 		-- 
 		cOperator { wmbat_dark_purple },
