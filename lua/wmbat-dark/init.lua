@@ -26,7 +26,7 @@ local grey_2 = colours.grey_2
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
 	local sym = injected_functions.sym
 	return {
