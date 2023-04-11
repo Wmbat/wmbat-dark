@@ -247,9 +247,11 @@ local theme = lush(function(injected_functions)
 		-- sym"@text.uri"          { }, -- Underlined
 		-- sym"@text.underline"    { }, -- Underlined
 		-- sym"@text.todo"         { }, -- Todo
+		--
 		sym"@comment" { fg = grey_0 }, -- Comment
 		sym"@punctuation" { fg = grey_0 }, -- Delimiter
 		sym"@punctuation.special" { fg = yellow }, -- Delimiter
+
 		sym"@constant" { fg = orange, gui = styles.italic }, -- Constant
 		sym"@constant.builtin" { fg = cyan, gui = styles.italic }, -- Special
 		sym"@constant.macro" { fg = cyan, gui = styles.italic }, -- Define
@@ -264,6 +266,7 @@ local theme = lush(function(injected_functions)
 		sym"@number" { fg = yellow }, -- Number
 		sym"@boolean" { fg = yellow }, -- Boolean
 		sym"@float" { fg = yellow }, -- Float
+
 		sym"@function" { fg = blue }, -- Function
 		sym"@function.builtin" { fg= blue }, -- Special
 		sym"@function.macro" { fg = blue }, -- Macro
@@ -272,12 +275,14 @@ local theme = lush(function(injected_functions)
 		sym"@field" { fg = blue }, -- Identifier
 		sym"@property" { fg = red, gui = styles.italic }, -- Identifier
 		sym"@constructor" { fg = blue }, -- Special
+
 		sym"@conditional" { fg = purple }, -- Conditional
 		sym"@repeat" { fg = purple }, -- Repeat
 		sym"@label" { fg = purple }, -- Label
 		sym"@operator" { fg = purple }, -- Operator
 		sym"@keyword" { fg = purple }, -- Keyword
 		sym"@exception" { fg = purple }, -- Exception
+
 		sym"@variable" { fg = red }, -- Identifier
 		sym"@type" { fg = yellow }, -- Type
 		sym"@type.definition" { fg = yellow }, -- Typedef
