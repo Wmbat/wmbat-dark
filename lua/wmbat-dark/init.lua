@@ -13,6 +13,7 @@ local bg_3 = colours.black_3
 local bg_4 = colours.black_4
 
 local red = colours.red
+local dark_red = colours.dark_red
 local green = colours.green
 local blue = colours.blue
 local dark_blue = colours.dark_blue
@@ -21,6 +22,7 @@ local dark_yellow = colours.dark_yellow
 local cyan = colours.cyan
 local purple = colours.purple
 local orange = colours.orange
+local pink = colours.pink
 
 local grey_0 = colours.grey_0
 local grey_1 = colours.grey_1
@@ -235,13 +237,13 @@ local theme = lush(function(injected_functions)
 		sym"@lsp.type.typeParameter" { fg = yellow },
 		sym"@lsp.type.parameter" { fg = grey_2 },
 		sym"@lsp.type.variable" { fg = fg },
-		-- sym"@lsp.type.property" { fg = yellow },
-		-- sym"@lsp.type.enumMember" { fg = yellow },
+		sym"@lsp.type.property" { fg = cyan },
+		sym"@lsp.type.enumMember" { fg = cyan },
 		-- sym"@lsp.type.event" { fg = yellow },
 
 		sym"@lsp.type.function" { fg = blue },
 		sym"@lsp.type.method" { fg = blue },
-		sym"@lsp.type.macro" { fg = cyan },
+		sym"@lsp.type.macro" { fg = pink },
 		sym"@lsp.type.keyword" { fg = purple },
 		sym"@lsp.type.modifier" { fg = purple },
 		sym"@lsp.type.comment" { fg = grey_0 },

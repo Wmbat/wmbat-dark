@@ -18,6 +18,7 @@ return {
 	cyan = hsl('#5dbbc1'),
 	purple = hsl('#d38aea'),
 	orange = hsl('#f87c37'),
+	pink = hsl('#df49c3'),
 	grey_0 = hsl('#7e8294'),
 	grey_1 = hsl('#5c6071'),
 	grey_2 = hsl('#7a819d'),
