@@ -13,7 +13,7 @@ return {
 	dark_green = hsl('#394634'),
 	blue = hsl('#6cb6eb'),
 	dark_blue = hsl('#354157'),
-	dark_yellow = hsl('#4e432f'),
+	dark_yellow = hsl('#af911a'),
 	yellow = hsl('#deb974'),
 	cyan = hsl('#5dbbc1'),
 	purple = hsl('#d38aea'),

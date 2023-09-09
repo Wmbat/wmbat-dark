@@ -15,7 +15,9 @@ local bg_4 = colours.black_4
 local red = colours.red
 local green = colours.green
 local blue = colours.blue
+local dark_blue = colours.dark_blue
 local yellow = colours.yellow
+local dark_yellow = colours.dark_yellow
 local cyan = colours.cyan
 local purple = colours.purple
 local orange = colours.orange
@@ -137,15 +139,15 @@ local theme = lush(function(injected_functions)
 
 		Comment { fg = grey_0 }, -- Any comment
 
-		Constant { fg = yellow }, -- (*) Any constant
+		Constant { fg = orange, gui = styles.italic }, -- (*) Any constant
 		String { fg = green }, --   A string constant: "this is a string"
 		Character { fg = green }, --   A character constant: 'c', '\n'
 		Number { fg = yellow }, --   A number constant: 234, 0xff
-		Boolean { fg = green }, --   A boolean constant: TRUE, false
+		Boolean { fg = yellow }, --   A boolean constant: TRUE, false
 		Float { fg = yellow }, --   A floating point constant: 2.3e10
 
-		Identifier { fg = cyan }, -- (*) Any variable name
-		-- Function { }, --   Function name (also: methods for classes)
+		Identifier { fg = red }, -- (*) Any variable name
+		Function { fg = blue }, --   Function name (also: methods for classes)
 
 		Statement { fg = purple }, -- (*) Any statement
 		Conditional { fg = purple }, --   if, then, else, endif, switch, etc.
@@ -224,6 +226,32 @@ local theme = lush(function(injected_functions)
 		DiagnosticSignInfo { TextInformation } , -- Used for "Info" signs in sign column.
 		DiagnosticSignHint { TextHint } , -- Used for "Hint" signs in sign column.
 
+
+		sym"@lsp.type.namespace" { fg = red },
+		sym"@lsp.type.type" { fg = yellow },
+		sym"@lsp.type.class" { fg = yellow },
+		sym"@lsp.type.enum" { fg = yellow },
+		sym"@lsp.type.struct" { fg = yellow },
+		sym"@lsp.type.typeParameter" { fg = yellow },
+		sym"@lsp.type.parameter" { fg = grey_2 },
+		sym"@lsp.type.variable" { fg = fg },
+		-- sym"@lsp.type.property" { fg = yellow },
+		-- sym"@lsp.type.enumMember" { fg = yellow },
+		-- sym"@lsp.type.event" { fg = yellow },
+
+		sym"@lsp.type.function" { fg = blue },
+		sym"@lsp.type.method" { fg = blue },
+		sym"@lsp.type.macro" { fg = cyan },
+		sym"@lsp.type.keyword" { fg = purple },
+		sym"@lsp.type.modifier" { fg = purple },
+		sym"@lsp.type.comment" { fg = grey_0 },
+		sym"@lsp.type.string" { fg = green },
+		sym"@lsp.type.number" { fg = yellow },
+		sym"@lsp.type.regexp" { fg = yellow },
+		sym"@lsp.type.operator" { fg = purple },
+
+		sym"@lsp.mod.deprecated" { fg = grey_2, gui = "strikethrough" },
+
 		-- Tree-Sitter syntax groups.
 		--
 		-- See :h treesitter-highlight-groups, some groups may not be listed,
@@ -270,7 +298,7 @@ local theme = lush(function(injected_functions)
 		sym"@function" { fg = blue }, -- Function
 		sym"@function.builtin" { fg= blue }, -- Special
 		sym"@function.macro" { fg = blue }, -- Macro
-		sym"@parameter" { fg = red, gui = styles.italic }, -- Identifier
+		sym"@parameter" { fg = grey_2, gui = styles.italic }, -- Identifier
 		sym"@method" { fg = blue }, -- Function
 		sym"@field" { fg = blue }, -- Identifier
 		sym"@property" { fg = red, gui = styles.italic }, -- Identifier
@@ -283,12 +311,12 @@ local theme = lush(function(injected_functions)
 		sym"@keyword" { fg = purple }, -- Keyword
 		sym"@exception" { fg = purple }, -- Exception
 
-		sym"@variable" { fg = red }, -- Identifier
+		sym"@variable" { fg = fg }, -- Identifier
 		sym"@type" { fg = yellow }, -- Type
 		sym"@type.definition" { fg = yellow }, -- Typedef
 		-- sym"@storageclass"     { }, -- StorageClass
 		sym"@structure" { fg = colours.cyan, gui = styles.italic }, -- Structure
-		sym"@namespace" { fg = yellow }, -- Identifier
+		sym"@namespace" { fg = red }, -- Identifier
 		sym"@include" { fg = purple }, -- Include
 		sym"@preproc" { fg = purple }, -- PreProc
 		-- sym"@debug"            { }, -- Debug
