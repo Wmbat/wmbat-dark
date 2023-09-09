@@ -230,7 +230,7 @@ local theme = lush(function(injected_functions)
 
 
 		sym"@lsp.type.namespace" { fg = red },
-		sym"@lsp.type.type" { fg = yellow },
+		sym"@lsp.type.type" { fg = purple },
 		sym"@lsp.type.class" { fg = yellow },
 		sym"@lsp.type.enum" { fg = yellow },
 		sym"@lsp.type.struct" { fg = yellow },
