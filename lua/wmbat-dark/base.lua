@@ -14,7 +14,6 @@ local white = colors.white
 local red = colors.red
 local dark_red = colors.dark_red
 local green = colors.green
-local dark_green = colors.dark_green
 local blue = colors.blue
 local dark_blue = colors.dark_blue
 local yellow = colors.yellow
@@ -22,6 +21,7 @@ local dark_yellow = colors.dark_yellow
 local cyan = colors.cyan
 local purple = colors.purple
 local orange = colors.orange
+local pink = colors.pink
 
 local grey_0 = colors.grey_0
 local grey_1 = colors.grey_1
@@ -76,17 +76,6 @@ local base_group = lush(function()
 
         wmbat_dark_error { fg = red },
         wmbat_dark_warning { fg = orange },
-
-        GitSignsAdd { fg = base.green },
-        GitSignsChange { fg = base.blue },
-        GitSignsDelete { fg = base.red },
-        GitSignsAddNr { fg = base.green },
-        GitSignsChangeNr { fg = base.blue },
-        GitSignsDeleteNr { fg = base.red },
-        GitSignsAddLn { bg = base.dark_green },
-        GitSignsChangeLn { bg = base.dark_blue },
-        GitSignsDeleteLn { bg = base.dark_red },
-        GitSignsCurrentLineBlame { fg = base.grey_0 },
 
         -- The following are the Neovim (as of 0.8.0-dev+100-g371dfb174) highlight
         -- groups, mostly used for styling UI elements.

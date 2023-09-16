@@ -1,20 +1,17 @@
 -- vim-startify highlights
 local lush = require("lush")
 local base = require("wmbat-dark.base")
-local styles = require("wmbat-dark.settings").styles
-local colours = require("wmbat-dark.colours")
-local table_concat = table.concat
 
 local group = lush(function()
     return {
-        StartifyBracket { fg = colours.Grey },
-        StartifyFile { fg = colours.Fg },
-        StartifyNumber { fg = colours.Red },
-        StartifyPath { fg = colours.Green },
-        StartifySlash { fg = colours.Green },
-        StartifySection { fg = colours.Blue },
-        StartifyHeader { fg = colours.Purple },
-        StartifySpecial { fg = colours.Grey },
+        StartifyBracket { fg = base.grey_0 },
+        StartifyFile { fg = base.white },
+        StartifyNumber { fg = base.red },
+        StartifyPath { fg = base.green },
+        StartifySlash { fg = base.green },
+        StartifySection { fg = base.blue },
+        StartifyHeader { fg = base.purple },
+        StartifySpecial { fg = base.grey_0 },
     }
 end)
 
