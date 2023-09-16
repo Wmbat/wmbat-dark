@@ -1,34 +1,34 @@
 local lush = require("lush")
-local colours = require("wmbat-dark.colors")
+local colors = require("wmbat-dark.colors")
 local styles = require("wmbat-dark.settings").styles
 
-local fg = colours.white
+local fg = colors.white
 
-local bg_0 = colours.black_0
-local bg_1 = colours.black_1
-local bg_2 = colours.black_2
-local bg_3 = colours.black_3
-local bg_4 = colours.black_4
+local bg_0 = colors.black_0
+local bg_1 = colors.black_1
+local bg_2 = colors.black_2
+local bg_3 = colors.black_3
+local bg_4 = colors.black_4
 
-local red = colours.red
-local green = colours.green
-local blue = colours.blue
-local yellow = colours.yellow
-local cyan = colours.cyan
-local purple = colours.purple
-local orange = colours.orange
+local red = colors.red
+local green = colors.green
+local blue = colors.blue
+local yellow = colors.yellow
+local cyan = colors.cyan
+local purple = colors.purple
+local orange = colors.orange
 
-local grey_0 = colours.grey_0
-local grey_1 = colours.grey_1
-local grey_2 = colours.grey_2
+local grey_0 = colors.grey_0
+local grey_1 = colors.grey_1
+local grey_2 = colors.grey_2
 
 vim.o.background = 'dark'
 
 vim.g.terminal_color_0 = bg_0.hex
-vim.g.terminal_color_1 = colours.dark_red.hex
-vim.g.terminal_color_2 = colours.dark_green.hex
-vim.g.terminal_color_3 = colours.dark_yellow.hex
-vim.g.terminal_color_4 = colours.dark_blue.hex
+vim.g.terminal_color_1 = colors.dark_red.hex
+vim.g.terminal_color_2 = colors.dark_green.hex
+vim.g.terminal_color_3 = colors.dark_yellow.hex
+vim.g.terminal_color_4 = colors.dark_blue.hex
 vim.g.terminal_color_5 = purple.hex
 vim.g.terminal_color_6 = cyan.hex
 vim.g.terminal_color_7 = grey_0.hex
