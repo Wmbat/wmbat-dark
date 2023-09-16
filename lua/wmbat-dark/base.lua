@@ -28,25 +28,24 @@ local grey_1 = colors.grey_1
 local grey_2 = colors.grey_2
 
 vim.o.background = 'dark'
-
-vim.g.terminal_color_0 = bg_0.hex
-vim.g.terminal_color_1 = colors.dark_red.hex
-vim.g.terminal_color_2 = colors.dark_green.hex
-vim.g.terminal_color_3 = colors.dark_yellow.hex
-vim.g.terminal_color_4 = colors.dark_blue.hex
-vim.g.terminal_color_5 = purple.hex
-vim.g.terminal_color_6 = cyan.hex
-vim.g.terminal_color_7 = grey_0.hex
-vim.g.terminal_color_8 = grey_2.hex
-vim.g.terminal_color_9 = red.hex
-vim.g.terminal_color_10 = green.hex
-vim.g.terminal_color_11 = yellow.hex
-vim.g.terminal_color_12 = blue.hex
-vim.g.terminal_color_13 = purple.hex
-vim.g.terminal_color_14 = cyan.hex
-vim.g.terminal_color_15 = fg.hex
-
 vim.g.colors_name = "wmbat-dark"
+
+-- vim.g.terminal_color_0 = bg_0.hex
+-- vim.g.terminal_color_1 = colors.dark_red.hex
+-- vim.g.terminal_color_2 = colors.dark_green.hex
+-- vim.g.terminal_color_3 = colors.dark_yellow.hex
+-- vim.g.terminal_color_4 = colors.dark_blue.hex
+-- vim.g.terminal_color_5 = purple.hex
+-- vim.g.terminal_color_6 = cyan.hex
+-- vim.g.terminal_color_7 = grey_0.hex
+-- vim.g.terminal_color_8 = grey_2.hex
+-- vim.g.terminal_color_9 = red.hex
+-- vim.g.terminal_color_10 = green.hex
+-- vim.g.terminal_color_11 = yellow.hex
+-- vim.g.terminal_color_12 = blue.hex
+-- vim.g.terminal_color_13 = purple.hex
+-- vim.g.terminal_color_14 = cyan.hex
+-- vim.g.terminal_color_15 = fg.hex
 
 local table_concat = table.concat
 
