@@ -50,7 +50,8 @@ vim.g.colors_name = "wmbat-dark"
 
 local table_concat = table.concat
 
-local base_group = lush(function()
+local base_group = lush(function(injected_functions)
+    local sym = injected_functions.sym
     return {
         wmbat_dark_fg { fg = fg },
 
@@ -198,6 +199,85 @@ local base_group = lush(function()
         -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
         Error { fg = red },                      -- Any erroneous construct
         Todo { fg = yellow, gui = styles.bold }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+
+        -- These groups are for the native LSP client and diagnostic system. Some
+        -- other LSP clients may use these groups, or use their own. Consult your
+        -- LSP client's documentation.
+
+        -- Tree-Sitter syntax groups.
+        --
+        -- See :h treesitter-highlight-groups, some groups may not be listed,
+        -- submit a PR fix to lush-template!
+        --
+        -- Tree-Sitter groups are defined with an "@" symbol, which must be
+        -- specially handled to be valid lua code, we do this via the special
+        -- sym function. The following are all valid ways to call the sym function,
+        -- for more details see https://www.lua.org/pil/5.html
+        --
+        -- sym("@text.literal")
+        -- sym('@text.literal')
+        -- sym"@text.literal"
+        -- sym'@text.literal'
+        --
+        -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
+
+        -- sym"@text.literal"      { }, -- Comment
+        -- sym"@text.reference"    { }, -- Identifier
+        -- sym"@text.title"        { }, -- Title
+        -- sym"@text.uri"          { }, -- Underlined
+        -- sym"@text.underline"    { }, -- Underlined
+        -- sym"@text.todo"         { }, -- Todo
+        --
+        sym "@comment" { fg = grey_0 },                             -- Comment
+        sym "@punctuation" { fg = grey_0 },                         -- Delimiter
+        sym "@punctuation.special" { fg = yellow },                 -- Delimiter
+
+        sym "@constant" { fg = orange, gui = styles.italic },       -- Constant
+        sym "@constant.builtin" { fg = cyan, gui = styles.italic }, -- Special
+        sym "@constant.macro" { fg = cyan, gui = styles.italic },   -- Define
+        sym "@define" { fg = purple },                              -- Define
+        sym "@macro" { fg = cyan },                                 -- Macro
+        sym "@string" { fg = green },                               -- String
+        sym "@string.escape" { fg = yellow },                       -- SpecialChar
+        sym "@string.regex" { fg = yellow },                        -- SpecialChar
+        sym "@string.special" { fg = yellow },                      -- SpecialChar
+        sym "@character" { fg = green },                            -- Character
+        sym "@character.special" { fg = yellow },                   -- SpecialChar
+        sym "@number" { fg = yellow },                              -- Number
+        sym "@boolean" { fg = yellow },                             -- Boolean
+        sym "@float" { fg = yellow },                               -- Float
+
+        sym "@function" { fg = blue },                              -- Function
+        sym "@function.builtin" { fg = blue },                      -- Special
+        sym "@function.macro" { fg = blue },                        -- Macro
+        sym "@parameter" { fg = grey_2, gui = styles.italic },      -- Identifier
+        sym "@method" { fg = blue },                                -- Function
+        sym "@field" { fg = blue },                                 -- Identifier
+        sym "@property" { fg = red, gui = styles.italic },          -- Identifier
+        sym "@constructor" { fg = blue },                           -- Special
+
+        sym "@conditional" { fg = purple },                         -- Conditional
+        sym "@repeat" { fg = purple },                              -- Repeat
+        sym "@label" { fg = purple },                               -- Label
+        sym "@operator" { fg = purple },                            -- Operator
+        sym "@keyword" { fg = purple },                             -- Keyword
+        sym "@exception" { fg = purple },                           -- Exception
+
+        sym "@variable" { fg = fg },                                -- Identifier
+        sym "@type" { fg = yellow },                                -- Type
+        sym "@type.definition" { fg = yellow },                     -- Typedef
+        -- sym"@storageclass"     { }, -- StorageClass
+        sym "@structure" { fg = cyan, gui = styles.italic }, -- Structure
+        sym "@namespace" { fg = red },                              -- Identifier
+        sym "@include" { fg = purple },                             -- Include
+        sym "@preproc" { fg = purple },                             -- PreProc
+        -- sym"@debug"            { }, -- Debug
+        sym "@tag" { fg = red, guy = styles.italic },               -- Tag
+
+
+        AerialFunctionIcon { fg = purple },
+        AerialLine { fg = red, bg = bg_2 },
+        AerialLineNC { fg = red, bg = bg_2 },
     }
 end)
 

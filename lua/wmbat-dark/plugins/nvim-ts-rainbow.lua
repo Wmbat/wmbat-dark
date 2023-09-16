@@ -12,7 +12,7 @@ M = lush(function()
         rainbowcol4 { fg = base.cyan },
         rainbowcol5 { fg = base.blue },
         rainbowcol6 { fg = base.purple },
-        rainbowcol7 { fg = base.orange }
+        rainbowcol7 { fg = base.orange },
     }
 end)
 
