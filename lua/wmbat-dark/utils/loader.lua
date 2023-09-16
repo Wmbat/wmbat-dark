@@ -6,7 +6,6 @@ local function load_plugins(config)
     for index, plugin in pairs(config.plugins) do
         if type(plugin) == 'string' then
             local local_plugin = require('wmbat-dark.plugins.' .. plugin)
-            print(local_plugin)
             config.plugins[index] = local_plugin
         elseif type(plugin) == 'table' then
             config.plugins[index] = plugin
