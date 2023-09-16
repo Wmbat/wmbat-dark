@@ -10,10 +10,15 @@ local bg_2 = colors.black_2
 local bg_3 = colors.black_3
 local bg_4 = colors.black_4
 
+local white = colors.white
 local red = colors.red
+local dark_red = colors.dark_red
 local green = colors.green
+local dark_green = colors.dark_green
 local blue = colors.blue
+local dark_blue = colors.dark_blue
 local yellow = colors.yellow
+local dark_yellow = colors.dark_yellow
 local cyan = colors.cyan
 local purple = colors.purple
 local orange = colors.orange

@@ -1,6 +1,6 @@
 -- gitsigns highlights
-local lush = require("lush")
-local base = require("wmbat-dark.base")
+local lush = require('lush')
+local base = require('wmbat-dark.base')
 
 local M = {}
 
