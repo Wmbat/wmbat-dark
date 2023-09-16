@@ -27,7 +27,7 @@ M = lush(function()
         NvimTreeLspDiagnosticsError { fg = base.red },
         NvimTreeLspDiagnosticsWarning { fg = base.yellow },
         NvimTreeLspDiagnosticsInformation { fg = base.blue },
-        NvimTreeLspDiagnosticsHint { fg = base.green }
+        NvimTreeLspDiagnosticsHint { fg = base.green },
     }
 end)
 
