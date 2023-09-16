@@ -1,7 +1,6 @@
 -- nvim-tree highlights
 local lush = require('lush')
 local base = require('wmbat-dark.base')
-local colors = require('wmbat-dark.colors')
 
 local M = {}
 

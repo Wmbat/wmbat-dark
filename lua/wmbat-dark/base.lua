@@ -77,6 +77,16 @@ local base_group = lush(function()
         wmbat_dark_error { fg = red },
         wmbat_dark_warning { fg = orange },
 
+        GitSignsAdd { fg = base.green },
+        GitSignsChange { fg = base.blue },
+        GitSignsDelete { fg = base.red },
+        GitSignsAddNr { fg = base.green },
+        GitSignsChangeNr { fg = base.blue },
+        GitSignsDeleteNr { fg = base.red },
+        GitSignsAddLn { bg = base.dark_green },
+        GitSignsChangeLn { bg = base.dark_blue },
+        GitSignsDeleteLn { bg = base.dark_red },
+        GitSignsCurrentLineBlame { fg = base.grey_0 },
 
         -- The following are the Neovim (as of 0.8.0-dev+100-g371dfb174) highlight
         -- groups, mostly used for styling UI elements.
