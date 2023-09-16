@@ -1,5 +1,5 @@
 local lush = require("lush")
-local colours = require("wmbat-dark.colours")
+local colours = require("wmbat-dark.colors")
 local styles = require("wmbat-dark.settings").styles
 
 local fg = colours.white
