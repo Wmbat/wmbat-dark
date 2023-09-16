@@ -2,9 +2,10 @@
 local lush = require('lush')
 local base = require('wmbat-dark.base')
 local styles = require('wmbat-dark.settings').styles
-local base = require('wmbat-dark.colors')
 
-local group = lush(function()
+
+local group = lush(function(injected_functions)
+    local sym = injected_functions.sym
     return {
         TextError { fg = base.red },
         TextWarning { fg = baset.orange },
