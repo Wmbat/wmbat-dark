@@ -193,7 +193,7 @@ local theme = lush(function(injected_functions)
 		LspReferenceWrite { gui = styles.bold }, -- Used for highlighting "write" references
 		-- LspCodeLens                 { } , -- Used to color the virtual text of the codelens. See |nvim_buf_set_extmark()|.
 		-- LspCodeLensSeparator        { } , -- Used to color the seperator between two or more code lens.
-		LspSignatureActiveParameter { fg = bg_0, bg = red } , -- Used to highlight the active parameter in the signature help. See |vim.lsp.handlers.signature_help()|.
+		LspSignatureActiveParameter { fg = bg_0, bg = red, gui = styles.bold } , -- Used to highlight the active parameter in the signature help. See |vim.lsp.handlers.signature_help()|.
 
 		TextError { fg = colours.red },
 		TextWarning { fg = colours.orange },
