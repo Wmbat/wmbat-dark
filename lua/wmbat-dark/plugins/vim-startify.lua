@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("wmbat-dark.base")
 
-local group = lush(function()
+local M = {}
+
+M = lush(function()
     return {
         StartifyBracket { fg = base.grey_0 },
         StartifyFile { fg = base.white },
@@ -15,4 +17,4 @@ local group = lush(function()
     }
 end)
 
-return group
+return M

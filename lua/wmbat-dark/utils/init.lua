@@ -7,14 +7,14 @@ M.tobool = function(val)
     return true
 end
 
-M.get_colour_from_var = function(colour, default, colours)
-    if colour == nil then
+M.get_colour_from_var = function(color, default, colors)
+    if color == nil then
         return default
     end
 
-    local c = colours[colour]
+    local c = colors[color]
     if c == nil then
-        print(string.format("%s colour could not be found, using default", colour))
+        print(string.format("%s colour could not be found, using default", color))
         return default
     end
 

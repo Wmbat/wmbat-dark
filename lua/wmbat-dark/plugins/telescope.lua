@@ -3,7 +3,9 @@ local lush = require("lush")
 local base = require("wmbat-dark.base")
 local styles = require("wmbat-dark.settings").styles
 
-local group = lush(function()
+local M = {}
+
+M = lush(function()
     return {
         TelescopeMatching { fg = base.green, gui = styles.bold },
         TelescopeBorder { fg = base.purple },
@@ -12,4 +14,4 @@ local group = lush(function()
     }
 end)
 
-return group
+return M

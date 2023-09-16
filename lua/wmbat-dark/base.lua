@@ -199,10 +199,6 @@ local base_group = lush(function(injected_functions)
         Error { fg = red },                      -- Any erroneous construct
         Todo { fg = yellow, gui = styles.bold }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
-        -- These groups are for the native LSP client and diagnostic system. Some
-        -- other LSP clients may use these groups, or use their own. Consult your
-        -- LSP client's documentation.
-
         -- Tree-Sitter syntax groups.
         --
         -- See :h treesitter-highlight-groups, some groups may not be listed,
