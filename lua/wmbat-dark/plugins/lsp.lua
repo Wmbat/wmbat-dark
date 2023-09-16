@@ -73,7 +73,7 @@ M = lush(function(injected_functions)
         LspReferenceWrite { gui = styles.bold },
         -- LspCodeLens { },
         -- LspCodeLensSeparator { },
-        LspSignatureActiveParameter { fg = bg_0, bg = red, gui = styles.bold },
+        LspSignatureActiveParameter { fg = base.bg_0, bg = base.red, gui = styles.bold },
 
         -- Lsp Semantic Highlighting
         sym "@lsp.type.namespace" { fg = base.red },
