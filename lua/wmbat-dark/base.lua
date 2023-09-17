@@ -46,8 +46,7 @@ vim.g.colors_name = "wmbat-dark"
 
 local table_concat = table.concat
 
-local M = {}
-M = lush(function()
+local base_group = lush(function()
     return {
         wmbat_dark_fg { fg = fg },
 
@@ -417,4 +416,4 @@ M = lush(function()
     }
 end)
 
-return M
+return base_group
