@@ -279,7 +279,7 @@ local theme = lush(function(injected_functions)
         -- sym"@text.todo"         { }, -- Todo
         --
         sym "@comment" { fg = grey_0 },                              -- Comment
-        sym "@punctuation" { fg = fg },                              -- Delimiter
+        sym "@punctuation" { fg = grey_0 },                          -- Delimiter
         sym "@punctuation.special" { fg = yellow },                  -- Delimiter
 
         sym "@constant" { fg = orange, gui = styles.italic },        -- Constant
