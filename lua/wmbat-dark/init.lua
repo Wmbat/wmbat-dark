@@ -72,7 +72,7 @@ local theme = lush(function(injected_functions)
         --
         ColorColumn {},                  -- Columns set with 'colorcolumn'
         Conceal { fg = grey_1 },         -- Placeholder characters substituted for concealed text (see 'conceallevel')
-        Cursor { gui = styles.inverse }, -- Character under the cursor
+        Cursor { bg = grey_1 }, -- Character under the curso
         lCursor { Cursor },              -- Character under the cursor when |language-mapping| is used (see 'guicursor')
         iCursor { Cursor },
         vCursor { Cursor },
