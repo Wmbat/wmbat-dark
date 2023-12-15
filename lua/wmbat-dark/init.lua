@@ -72,7 +72,7 @@ local theme = lush(function(injected_functions)
         --
         ColorColumn {},                  -- Columns set with 'colorcolumn'
         Conceal { fg = grey_1 },         -- Placeholder characters substituted for concealed text (see 'conceallevel')
-        Cursor { bg = grey_1 }, -- Character under the curso
+        Cursor { gui = styles.inverse }, -- Character under the curso
         lCursor { Cursor },              -- Character under the cursor when |language-mapping| is used (see 'guicursor')
         iCursor { Cursor },
         vCursor { Cursor },
@@ -112,7 +112,7 @@ local theme = lush(function(injected_functions)
         PmenuThumb { bg = grey_0 },        -- Popup menu: Thumb of the scrollbar.
         Question { fg = orange },          -- |hit-enter| prompt and yes/no questions
         -- QuickFixLine { fg = purple, gui = styles.bold }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-        Search { fg = bg_0, bg = fg },     -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+        Search { bg = bg_4 },     -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
         -- SpecialKey   { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
         -- SpellBad     { }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
         -- SpellCap     { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
