@@ -21,6 +21,7 @@ local yellow = colours.yellow
 local dark_yellow = colours.dark_yellow
 local cyan = colours.cyan
 local purple = colours.purple
+local dark_purple = colours.dark_purple
 local orange = colours.orange
 local pink = colours.pink
 
@@ -112,7 +113,7 @@ local theme = lush(function(injected_functions)
         PmenuThumb { bg = grey_0 },        -- Popup menu: Thumb of the scrollbar.
         Question { fg = orange },          -- |hit-enter| prompt and yes/no questions
         -- QuickFixLine { fg = purple, gui = styles.bold }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-        Search { bg = bg_4 },     -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+        Search { bg = bg_4 },              -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
         -- SpecialKey   { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
         -- SpellBad     { }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
         -- SpellCap     { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
@@ -401,6 +402,14 @@ local theme = lush(function(injected_functions)
         cOperator { wmbat_dark_purple },
         cppOperator { wmbat_dark_purple },
         -- cStructure { wmbat_dark_cyan },
+
+        -- render-markdown
+        RenderMarkdownH1Bg { fg = colours.dark_purple },
+        RenderMarkdownH2Bg { fg = colours.dark_blue },
+        RenderMarkdownH3Bg { fg = colours.dark_green },
+        RenderMarkdownH4Bg { fg = colours.dark_red },
+        RenderMarkdownH5Bg { fg = colours.dark_orange },
+        RenderMarkdownH6Bg { fg = colours.dark_yellow },
     }
 end)
 
