@@ -410,6 +410,8 @@ local theme = lush(function(injected_functions)
         RenderMarkdownH4Bg { bg = colours.dark_red },
         RenderMarkdownH5Bg { bg = colours.dark_orange },
         RenderMarkdownH6Bg { bg = colours.dark_yellow },
+        RenderMarkdownCode { bg = colours.black_1 },
+        RenderMarkdownCodeInline { bg = colours.black_1 },
     }
 end)
 
