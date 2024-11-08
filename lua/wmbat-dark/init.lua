@@ -404,12 +404,12 @@ local theme = lush(function(injected_functions)
         -- cStructure { wmbat_dark_cyan },
 
         -- render-markdown
-        RenderMarkdownH1Bg { fg = colours.dark_purple },
-        RenderMarkdownH2Bg { fg = colours.dark_blue },
-        RenderMarkdownH3Bg { fg = colours.dark_green },
-        RenderMarkdownH4Bg { fg = colours.dark_red },
-        RenderMarkdownH5Bg { fg = colours.dark_orange },
-        RenderMarkdownH6Bg { fg = colours.dark_yellow },
+        RenderMarkdownH1Bg { bg = colours.dark_purple },
+        RenderMarkdownH2Bg { bg = colours.dark_blue },
+        RenderMarkdownH3Bg { bg = colours.dark_green },
+        RenderMarkdownH4Bg { bg = colours.dark_red },
+        RenderMarkdownH5Bg { bg = colours.dark_orange },
+        RenderMarkdownH6Bg { bg = colours.dark_yellow },
     }
 end)
 
