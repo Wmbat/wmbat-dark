@@ -401,7 +401,6 @@ local theme = lush(function(injected_functions)
         --
         cOperator { wmbat_dark_purple },
         cppOperator { wmbat_dark_purple },
-        -- cStructure { wmbat_dark_cyan },
 
         -- render-markdown
         RenderMarkdownH1Bg { bg = colours.dark_purple },
