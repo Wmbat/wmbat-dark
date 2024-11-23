@@ -6,7 +6,7 @@ local function load_plugins(config)
     for index, plugin in pairs(config.plugins) do
         if type(plugin) == 'string' then
 
-            vim.print('wmbat-dark.plugins' .. plugin)
+            vim.print('wmbat-dark.plugins.' .. plugin)
 
             local local_plugin = require('wmbat-dark.plugins.' .. plugin)
             config.plugins[index] = local_plugin
