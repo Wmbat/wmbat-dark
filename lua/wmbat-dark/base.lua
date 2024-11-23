@@ -121,7 +121,7 @@ local base_group = lush(function()
         NormalFloat { fg = fg, bg = bg_0 },  -- Normal text in floating windows.
         FloatBorder { fg = blue, bg = bg_0 },
         -- NormalNC     { }, -- normal text in non-current windows
-        Pmenu { fg = fg, bg = bg_2 },       -- Popup menu: Normal item.
+        Pmenu { fg = fg, bg = colours.line },       -- Popup menu: Normal item.
         PmenuSel { fg = bg_0, bg = blue },  -- Popup menu: Selected item.
         PmenuSbar { bg = bg_2 },            -- Popup menu: Scrollbar.
         PmenuThumb { bg = grey_0 },         -- Popup menu: Thumb of the scrollbar.
