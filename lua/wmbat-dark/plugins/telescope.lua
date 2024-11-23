@@ -8,8 +8,8 @@ local table_concat = table.concat
 local group = lush(function()
 	return {
 		TelescopeMatching { fg = colours.green, gui = styles.bold },
-		TelescopeBorder { fg = colours.purple },
-		TelescopePromptPrefix { fg = colours.blue },
+		TelescopeBorder { fg = colours.blue },
+		TelescopePromptPrefix { fg = colours.purple },
 		TelescopeSelection { bg = colours.dark_green },
 	}
 end)
