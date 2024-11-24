@@ -182,7 +182,7 @@ local base_group = lush(function()
 
         Type { fg = red },                              -- (*) int, long, char, etc.
         StorageClass { fg = red },                      --   static, register, volatile, etc.
-        Structure { fg = red },                         --   struct, union, enum, etc.
+        Structure { fg = yellow },                         --   struct, union, enum, etc.
         Typedef { fg = purple },                        --   A Typedef
 
         Special { fg = yellow },                        -- (*) Any special symbol

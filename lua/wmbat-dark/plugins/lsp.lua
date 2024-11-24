@@ -95,6 +95,11 @@ local group = lush(function()
         sym "@lsp.type.operator" { fg = colours.purple },
 
         sym "@lsp.mod.deprecated" { fg = colours.grey_2, gui = "strikethrough" },
+
+        -- C++ highlights
+        sym "@lsp.type.class.cpp" { fg = colours.yellow },
+        sym "@lsp.type.namespace.cpp" { fg = colours.red },
+        sym "@lsp.type.parameter.cpp" { fg = colours.grey_2 },
     }
 end)
 
