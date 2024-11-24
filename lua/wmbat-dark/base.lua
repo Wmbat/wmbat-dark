@@ -196,6 +196,31 @@ local base_group = lush(function()
         -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
         Error { fg = red },                       -- Any erroneous construct
         Todo { fg = yellow, gui = styles.bold },  -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+
+        sym "@lsp.type.namespace" { fg = colours.red },
+        sym "@lsp.type.type" { fg = colours.yellow },
+        sym "@lsp.type.class" { fg = colours.yellow },
+        sym "@lsp.type.enum" { fg = colours.yellow },
+        sym "@lsp.type.struct" { fg = colours.yellow },
+        sym "@lsp.type.typeParameter" { fg = colours.yellow },
+        sym "@lsp.type.parameter" { fg = colours.grey_2 },
+        sym "@lsp.type.variable" { fg = colours.fg },
+        sym "@lsp.type.property" { fg = colours.cyan },
+        sym "@lsp.type.enumMember" { fg = colours.cyan },
+        -- sym"@lsp.type.event" { fg = yellow },
+
+        sym "@lsp.type.function" { fg = colours.blue },
+        sym "@lsp.type.method" { fg = colours.blue },
+        sym "@lsp.type.macro" { fg = colours.pink },
+        sym "@lsp.type.keyword" { fg = colours.purple },
+        sym "@lsp.type.modifier" { fg = colours.purple },
+        sym "@lsp.type.comment" { fg = colours.grey_0 },
+        sym "@lsp.type.string" { fg = colours.green },
+        sym "@lsp.type.number" { fg = colours.yellow },
+        sym "@lsp.type.regexp" { fg = colours.yellow },
+        sym "@lsp.type.operator" { fg = colours.purple },
+
+        sym "@lsp.mod.deprecated" { fg = colours.grey_2, gui = "strikethrough" },
     }
 end)
 
