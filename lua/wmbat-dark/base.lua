@@ -154,43 +154,43 @@ local base_group = lush(function()
         --
         -- Uncomment and edit if you want more specific syntax highlighting.
 
-        -- Comment { fg = grey_0 },                        -- Any comment
-        --
-        -- Constant { fg = orange, gui = styles.italic },  -- (*) Any constant
-        -- String { fg = green },                          --   A string constant: "this is a string"
-        -- Character { fg = green },                       --   A character constant: 'c', '\n'
-        -- Number { fg = yellow },                         --   A number constant: 234, 0xff
-        -- Boolean { fg = yellow },                        --   A boolean constant: TRUE, false
-        -- Float { fg = yellow },                          --   A floating point constant: 2.3e10
-        --
-        -- Identifier { fg = red },                        -- (*) Any variable name
-        -- Function { fg = blue },                         --   Function name (also: methods for classes)
-        --
-        -- Statement { fg = purple },                      -- (*) Any statement
-        -- Conditional { fg = purple },                    --   if, then, else, endif, switch, etc.
-        -- Repeat { fg = purple },                         --   for, do, while, etc.
-        -- Label { fg = purple },                          --   case, default, etc.
-        -- Operator { fg = purple },                       --   "sizeof", "+", "*", etc.
-        -- Keyword { fg = purple },                        --   any other keyword
-        -- Exception { fg = purple },                      --   try, catch, throw
-        --
-        -- PreProc { fg = purple },                        -- (*) Generic Preprocessor
-        -- Include { fg = purple },                        --   Preprocessor #include
-        -- Define { fg = purple },                         --   Preprocessor #define
-        -- Macro { fg = yellow },                          --   Same as Define
-        -- PreCondit { fg = purple },                      --   Preprocessor #if, #else, #endif, etc.
-        --
-        -- Type { fg = yellow },                              -- (*) int, long, char, etc.
-        -- StorageClass { fg = purple },                      --   static, register, volatile, etc.
-        -- Structure { fg = yellow },                         --   struct, union, enum, etc.
-        -- Typedef { fg = yellow },                        --   A Typedef
-        --
-        -- Special { fg = yellow },                        -- (*) Any special symbol
-        -- SpecialChar { fg = yellow },                    --   Special character in a constant
-        -- Tag { fg = yellow },                            --   You can use CTRL-] on this
-        -- Delimiter { fg = fg },                          --   Character that needs attention
-        -- SpecialComment { fg = grey_0 },                 --   Special things inside a comment (e.g. '\n')
-        -- Debug          { }, --   Debugging statements
+        Comment { fg = grey_0 },                        -- Any comment
+
+        Constant { fg = orange, gui = styles.italic },  -- (*) Any constant
+        String { fg = green },                          --   A string constant: "this is a string"
+        Character { fg = green },                       --   A character constant: 'c', '\n'
+        Number { fg = yellow },                         --   A number constant: 234, 0xff
+        Boolean { fg = yellow },                        --   A boolean constant: TRUE, false
+        Float { fg = yellow },                          --   A floating point constant: 2.3e10
+
+        Identifier { fg = red },                        -- (*) Any variable name
+        Function { fg = blue },                         --   Function name (also: methods for classes)
+
+        Statement { fg = purple },                      -- (*) Any statement
+        Conditional { fg = purple },                    --   if, then, else, endif, switch, etc.
+        Repeat { fg = purple },                         --   for, do, while, etc.
+        Label { fg = purple },                          --   case, default, etc.
+        Operator { fg = purple },                       --   "sizeof", "+", "*", etc.
+        Keyword { fg = purple },                        --   any other keyword
+        Exception { fg = purple },                      --   try, catch, throw
+
+        PreProc { fg = purple },                        -- (*) Generic Preprocessor
+        Include { fg = purple },                        --   Preprocessor #include
+        Define { fg = purple },                         --   Preprocessor #define
+        Macro { fg = yellow },                          --   Same as Define
+        PreCondit { fg = purple },                      --   Preprocessor #if, #else, #endif, etc.
+
+        Type { fg = yellow },                              -- (*) int, long, char, etc.
+        StorageClass { fg = purple },                      --   static, register, volatile, etc.
+        Structure { fg = yellow },                         --   struct, union, enum, etc.
+        Typedef { fg = yellow },                        --   A Typedef
+
+        Special { fg = yellow },                        -- (*) Any special symbol
+        SpecialChar { fg = yellow },                    --   Special character in a constant
+        Tag { fg = yellow },                            --   You can use CTRL-] on this
+        Delimiter { fg = fg },                          --   Character that needs attention
+        SpecialComment { fg = grey_0 },                 --   Special things inside a comment (e.g. '\n')
+        Debug          { }, --   Debugging statements
 
         Underlined { gui = styles.underline },   -- Text that stands out, HTML links
         -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
