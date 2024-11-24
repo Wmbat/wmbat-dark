@@ -163,7 +163,7 @@ local base_group = lush(function()
         Boolean { fg = yellow },                        --   A boolean constant: TRUE, false
         Float { fg = yellow },                          --   A floating point constant: 2.3e10
 
-        Identifier { fg = red },                        -- (*) Any variable name
+        Identifier { fg = cyan },                        -- (*) Any variable name
         Function { fg = blue },                         --   Function name (also: methods for classes)
 
         Statement { fg = purple },                      -- (*) Any statement
