@@ -180,10 +180,10 @@ local base_group = lush(function()
         Macro { fg = yellow },                          --   Same as Define
         PreCondit { fg = purple },                      --   Preprocessor #if, #else, #endif, etc.
 
-        Type { fg = red },                              -- (*) int, long, char, etc.
-        StorageClass { fg = red },                      --   static, register, volatile, etc.
-        Structure { fg = red },                         --   struct, union, enum, etc.
-        Typedef { fg = purple },                        --   A Typedef
+        Type { fg = yellow },                              -- (*) int, long, char, etc.
+        StorageClass { fg = yellow },                      --   static, register, volatile, etc.
+        Structure { fg = yellow },                         --   struct, union, enum, etc.
+        Typedef { fg = yellow },                        --   A Typedef
 
         Special { fg = yellow },                        -- (*) Any special symbol
         SpecialChar { fg = yellow },                    --   Special character in a constant
