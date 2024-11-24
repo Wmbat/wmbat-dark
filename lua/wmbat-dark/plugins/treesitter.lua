@@ -29,51 +29,51 @@ local group = lush(function()
         -- sym"@text.underline"    { }, -- Underlined
         -- sym"@text.todo"         { }, -- Todo
         --
-        sym "@comment" { fg = colours.grey_0 },                             -- Comment
-        sym "@punctuation" { fg = colours.grey_0 },                         -- Delimiter
-        sym "@punctuation.special" { fg = colours.yellow },                 -- Delimiter
+        ["@comment"] = { fg = colours.grey_0 },                             -- Comment
+        ["@punctuation"] = { fg = colours.grey_0 },                         -- Delimiter
+        ["@punctuation.special"] = { fg = colours.yellow },                 -- Delimiter
 
-        sym "@constant" { fg = colours.orange, gui = styles.italic },       -- Constant
-        sym "@constant.builtin" { fg = colours.cyan, gui = styles.italic }, -- Special
-        sym "@constant.macro" { fg = colours.cyan, gui = styles.italic },   -- Define
-        sym "@define" { fg = colours.purple },                              -- Define
-        sym "@macro" { fg = colours.cyan },                                 -- Macro
-        sym "@string" { fg = colours.green },                               -- String
-        sym "@string.escape" { fg = colours.yellow },                       -- SpecialChar
-        sym "@string.regex" { fg = colours.yellow },                        -- SpecialChar
-        sym "@string.special" { fg = colours.yellow },                      -- SpecialChar
-        sym "@character" { fg = colours.green },                            -- Character
-        sym "@character.special" { fg = colours.yellow },                   -- SpecialChar
-        sym "@number" { fg = colours.yellow },                              -- Number
-        sym "@boolean" { fg = colours.yellow },                             -- Boolean
-        sym "@float" { fg = colours.yellow },                               -- Float
+        ["@constant"] = { fg = colours.orange, gui = styles.italic },       -- Constant
+        ["@constant.builtin"] = { fg = colours.cyan, gui = styles.italic }, -- Special
+        ["@constant.macro"] = { fg = colours.cyan, gui = styles.italic },   -- Define
+        ["@define"] = { fg = colours.purple },                              -- Define
+        ["@macro"] = { fg = colours.cyan },                                 -- Macro
+        ["@string"] = { fg = colours.green },                               -- String
+        ["@string.escape"] = { fg = colours.yellow },                       -- SpecialChar
+        ["@string.regex"] = { fg = colours.yellow },                        -- SpecialChar
+        ["@string.special"] = { fg = colours.yellow },                      -- SpecialChar
+        ["@character"] = { fg = colours.green },                            -- Character
+        ["@character.special"] = { fg = colours.yellow },                   -- SpecialChar
+        ["@number"] = { fg = colours.yellow },                              -- Number
+        ["@boolean"] = { fg = colours.yellow },                             -- Boolean
+        ["@float"] = { fg = colours.yellow },                               -- Float
 
-        sym "@function" { fg = colours.blue },                              -- Function
-        sym "@function.builtin" { fg = colours.blue },                      -- Special
-        sym "@function.macro" { fg = colours.blue },                        -- Macro
-        sym "@parameter" { fg = colours.grey_2, gui = styles.italic },      -- Identifier
-        sym "@method" { fg = colours.blue },                                -- Function
-        sym "@field" { fg = colours.blue },                                 -- Identifier
-        sym "@property" { fg = colours.red, gui = styles.italic },          -- Identifier
-        sym "@constructor" { fg = colours.blue },                           -- Special
+        ["@function"] = { fg = colours.blue },                              -- Function
+        ["@function.builtin"] = { fg = colours.blue },                      -- Special
+        ["@function.macro"] = { fg = colours.blue },                        -- Macro
+        ["@parameter"] = { fg = colours.grey_2, gui = styles.italic },      -- Identifier
+        ["@method"] = { fg = colours.blue },                                -- Function
+        ["@field"] = { fg = colours.blue },                                 -- Identifier
+        ["@property"] = { fg = colours.red, gui = styles.italic },          -- Identifier
+        ["@constructor"] = { fg = colours.blue },                           -- Special
 
-        sym "@conditional" { fg = colours.purple },                         -- Conditional
-        sym "@repeat" { fg = colours.purple },                              -- Repeat
-        sym "@label" { fg = colours.purple },                               -- Label
-        sym "@operator" { fg = colours.purple },                            -- Operator
-        sym "@keyword" { fg = colours.purple },                             -- Keyword
-        sym "@exception" { fg = colours.purple },                           -- Exception
+        ["@conditional"] = { fg = colours.purple },                         -- Conditional
+        ["@repeat"] = { fg = colours.purple },                              -- Repeat
+        ["@label"] = { fg = colours.purple },                               -- Label
+        ["@operator"] = { fg = colours.purple },                            -- Operator
+        ["@keyword"] = { fg = colours.purple },                             -- Keyword
+        ["@exception"] = { fg = colours.purple },                           -- Exception
 
-        sym "@variable" { fg = colours.white },                             -- Identifier
-        sym "@type" { fg = colours.yellow },                                -- Type
-        sym "@type.definition" { fg = colours.yellow },                     -- Typedef
+        ["@variable"] = { fg = colours.white },                             -- Identifier
+        ["@type"] = { fg = colours.yellow },                                -- Type
+        ["@type.definition"] = { fg = colours.yellow },                     -- Typedef
         -- sym"@storageclass"     { }, -- StorageClass
-        sym "@structure" { fg = colours.cyan, gui = styles.italic },        -- Structure
-        sym "@namespace" { fg = colours.red },                              -- Identifier
-        sym "@include" { fg = colours.purple },                             -- Include
-        sym "@preproc" { fg = colours.purple },                             -- PreProc
+        ["@structure"] = { fg = colours.cyan, gui = styles.italic },        -- Structure
+        ["@namespace"] = { fg = colours.red },                              -- Identifier
+        ["@include"] = { fg = colours.purple },                             -- Include
+        ["@preproc"] = { fg = colours.purple },                             -- PreProc
         -- sym"@debug"            { }, -- Debug
-        sym "@tag" { fg = colours.red, guy = styles.italic },               -- Tag
+        ["@tag"] = { fg = colours.red, guy = styles.italic },               -- Tag
     }
 end)
 

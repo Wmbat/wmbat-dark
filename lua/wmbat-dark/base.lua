@@ -186,10 +186,10 @@ local base_group = lush(function()
         Typedef { fg = purple },                        --   A Typedef
 
         Special { fg = yellow },                        -- (*) Any special symbol
-        SpecialChar { fg = yellow },                    --   Special character in a constant
+        SpecialChar { link = 'Special' },                    --   Special character in a constant
+        SpecialComment { fg = grey_0 },                 --   Special things inside a comment (e.g. '\n')
         Tag { fg = yellow },                            --   You can use CTRL-] on this
         Delimiter { fg = fg },                          --   Character that needs attention
-        SpecialComment { fg = grey_0 },                 --   Special things inside a comment (e.g. '\n')
         -- Debug          { }, --   Debugging statements
 
         Underlined { gui = styles.underline },    -- Text that stands out, HTML links
