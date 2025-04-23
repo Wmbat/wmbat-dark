@@ -8,7 +8,9 @@ local group = lush(function()
     return {
         DiffviewDiffAdd { bg = colours.dark_green },
         DiffviewDiffChange { bg = colours.dark_blue },
-        DiffviewDiffDelete { bg = colours.dark_red }
+        DiffviewDiffDelete { bg = colours.dark_red },
+        DiffviewDiffText { fg = colours.black_0, bg = colours.dark_blue },
+        DiffviewDiffAddAsDelete { bg = colours.dark_red },
     }
 end)
 
