@@ -71,7 +71,7 @@ local group = lush(function()
         LspReferenceRead { gui = styles.bold },
         LspReferenceWrite { gui = styles.bold },
 
-        LspInlayHint { fg = colours.grey_2, guid = styles.italic },
+        LspInlayHint { fg = colours.grey_2, bg = colours.grey_0, guid = styles.bold },
 
         ["@lsp.type.namespace"] = { fg = colours.red },
         ["@lsp.type.type"] = { fg = colours.yellow },
